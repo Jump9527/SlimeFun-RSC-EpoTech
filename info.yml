@@ -1,16 +1,17 @@
-id: JP
-name: JP
+id: EpoTech
+name: EpoTech
 depends: []
 scriptListener: 怪物掉落
 pluginDepends:
-- FoxyMachines
+- FNAmplifications
 - InfinityExpansion
 - LiteXpansion
-- TranscEndence
 - GuizhanLibPlugin
-- Gastronomicon
-version: Release-1.0.0
-description: 缓解服务器压力所写
+- MomoTech
+- Supreme
+- FoxyMachines
+version: Release-1.0.1
+description: 脑洞大爆炸
 authors:
 - J_ump
-repo: 
+repo: Jump9527/SlimeFun-RSC-EpoTech

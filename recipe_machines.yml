@@ -1,133 +1,3 @@
-JP_JQGC:
-  lateInit: false
-  item_group: jp_jq_plus
-  item:
-    name: '&a&l机器工厂'
-    lore:
-    - '&7一体化工厂'
-    - '&b节省大量空间'
-    - '&8⇨ &e⚡&7 5000 J 可存储'
-    - '&8⇨ &e⚡&7 2000 J/s'
-    material_type: skull_hash
-    material: 6de3d2a78e12901b96ae4da876e676668b24a7fa3dc1dacfdd3906b946cb8359
-  speed: 1
-  recipe_type: ENHANCED_CRAFTING_TABLE
-  recipe:
-    1:
-      material_type: slimefun
-      material: JP_ZNKZZX
-      amount: 1
-    2:
-      material_type: slimefun
-      material: INFINITE_INGOT
-      amount: 1
-    3:
-      material_type: slimefun
-      material: JP_ZNKZZX
-      amount: 1
-    4:
-      material_type: slimefun
-      material: INFINITE_INGOT
-      amount: 1
-    5:
-      material_type: slimefun
-      material: INFINITY_FORGE
-      amount: 1
-    6:
-      material_type: slimefun
-      material: INFINITE_INGOT
-      amount: 1
-    7:
-      material_type: slimefun
-      material: JP_ZNKZZX
-      amount: 1
-    8:
-      material_type: slimefun
-      material: INFINITE_INGOT
-      amount: 1
-    9:
-      material_type: slimefun
-      material: JP_ZNKZZX
-      amount: 1
-  capacity: 5000
-  energyPerCraft: 1000
-  recipes:
-    '1':
-      seconds: 60
-      input:
-        1:
-          material_type: slimefun
-          material: FINALTECH_LINE_TRANSFER
-          amount: 24
-        2:
-          material_type: slimefun
-          material: NTW_PUSHER
-          amount: 24  
-        3:
-          material_type: slimefun
-          material: NTW_IMPORT
-          amount: 1   
-        4:
-          material_type: slimefun
-          material: INFINITY_COBBLE_GEN
-          amount: 4    
-        5:
-          material_type: slimefun
-          material: FINALTECH_ORDERED_DUST_FACTORY_STONE
-          amount: 1     
-      output:
-        1:
-          material_type: slimefun
-          material: JP_YX
-          amount: 1
-    '2':
-      seconds: 60
-      input:
-        1:
-          material_type: slimefun
-          material: FINALTECH_LINE_TRANSFER
-          amount: 24
-        2:
-          material_type: slimefun
-          material: NTW_PUSHER
-          amount: 24  
-        3:
-          material_type: slimefun
-          material: NTW_IMPORT
-          amount: 1   
-        4:
-          material_type: slimefun
-          material: INFINITY_COBBLE_GEN
-          amount: 4    
-        5:
-          material_type: slimefun
-          material: FINALTECH_ORDERED_DUST_FACTORY_DIRT
-          amount: 1     
-      output:
-        1:
-          material_type: slimefun
-          material: JP_WX
-          amount: 1
-    '3':
-      seconds: 600
-      chooseOne: true
-      input:
-        1:
-          material_type: mc
-          material: COBBLESTONE
-          amount: 1
-      output:
-        1:
-          chance: 1
-          material_type: slimefun
-          material: JP_WX
-        2:
-          chance: 1
-          material_type: slimefun
-          material: JP_YX  
-  input: [0,1,2,3, 9,10,11,12, 18,19,20,21, 27,28,29,30, 36,37,38,39, 45,46,47,48]
-  output: [5,6,7,8, 14,15,16,17, 23,24,25,26, 32,33,34,35, 41,42,43,44, 50,51,52,53 ]
-
 JP_ZNCJ:
   lateInit: false
   item_group: jp_jq_plus
@@ -474,7 +344,55 @@ JP_JQGC:
         1:
           material_type: slimefun
           material: JP_FC_FW
-          amount: 1     
+          amount: 1 
+    '5':
+      seconds: 60
+      input:
+        1:
+          material_type: slimefun
+          material: JP_GWS1_REDSTONE
+          amount: 1
+        2:
+          material_type: slimefun
+          material: JP_GWS1_EMERALD
+          amount: 1  
+        3:
+          material_type: slimefun
+          material: JP_GWS1_IRON_INGOT
+          amount: 1   
+        4:
+          material_type: slimefun
+          material: JP_GWS1_COAL
+          amount: 1    
+        5:
+          material_type: slimefun
+          material: JP_GWS1_LAPIS_LAZULI
+          amount: 1    
+        6:
+          material_type: slimefun
+          material: JP_GWS1_QUARTZ
+          amount: 1
+        7:
+          material_type: slimefun
+          material: JP_GWS1_GOLD_INGOT
+          amount: 1  
+        8:
+          material_type: slimefun
+          material: JP_GWS1_DIAMOND
+          amount: 1   
+        9:
+          material_type: slimefun
+          material: JP_GWS1_NETHERITE_INGOT
+          amount: 1  
+        10:
+          material_type: slimefun
+          material: JP_JH_3
+          amount: 1  
+      output:
+        1:
+          material_type: slimefun
+          material: JP_GWS1_KWJ
+          amount: 1          
   input: [0,1,2,3, 9,10,11,12, 18,19,20,21, 27,28,29,30, 36,37,38,39, 45,46,47,48]
   output: [5,6,7,8, 14,15,16,17, 23,24,25,26, 32,33,34,35, 41,42,43,44, 50,51,52,53 ]
 

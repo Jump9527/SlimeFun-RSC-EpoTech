@@ -301,6 +301,44 @@ JP_KJJQ:
          material_type: slimefun
          material: JP_FWQ 
          amount: 1  
+    JP_PLAYPLAN:
+      input:
+       1:
+          material_type: slimefun
+          material: RUBBER
+          amount: 1   
+       2:
+          material_type: slimefun
+          material: RUBBER 
+          amount: 1 
+       3:
+          material_type: slimefun
+          material: RUBBER
+          amount: 1   
+       4:
+          material_type: slimefun
+          material: RUBBER 
+          amount: 1 
+       6:
+          material_type: slimefun
+          material: RUBBER 
+          amount: 1         
+       7:
+          material_type: slimefun
+          material: RUBBER
+          amount: 1  
+       8:
+          material_type: slimefun
+          material: RUBBER 
+          amount: 1         
+       9:
+          material_type: slimefun
+          material: RUBBER 
+          amount: 1   
+      output:
+         material_type: slimefun
+         material: JP_PLAYPLAN 
+         amount: 1      
 
 ##神话工作台   
 
@@ -385,3 +423,65 @@ JP_GOD_CRAFTING_TABLE:
          material_type: slimefun
          material: JP_HKS_DIAMOND_SWORD 
          amount: 1 
+    JP_HKS_PICKAXE:
+      input:
+       1:
+          material_type: slimefun
+          material: EXPLOSIVE_PICKAXE
+          amount: 1   
+      output:
+         material_type: slimefun
+         material: JP_HKS_PICKAXE 
+         amount: 1     
+    JP_JYSNQ250:
+      input:
+       1:
+          material_type: mc
+          material: EXPERIENCE_BOTTLE
+          amount: 1  
+       2:
+          material_type: mc
+          material: EXPERIENCE_BOTTLE
+          amount: 1 
+       3:
+          material_type: mc
+          material: EXPERIENCE_BOTTLE
+          amount: 1   
+       4:
+          material_type: mc
+          material: EXPERIENCE_BOTTLE
+          amount: 1  
+       5:
+          material_type: slimefun
+          material: JP_JH_3
+          amount: 1 
+       6:
+          material_type: mc
+          material: EXPERIENCE_BOTTLE
+          amount: 1
+       7:
+          material_type: mc
+          material: EXPERIENCE_BOTTLE
+          amount: 1  
+       8:
+          material_type: mc
+          material: EXPERIENCE_BOTTLE
+          amount: 1 
+       9:
+          material_type: mc
+          material: EXPERIENCE_BOTTLE
+          amount: 1           
+      output:
+         material_type: slimefun
+         material: JP_JYSNQ250 
+         amount: 1
+    JP_WJZFK:
+      input:
+       1:
+          material_type: slimefun
+          material: INFINITE_INGOT
+          amount: 64        
+      output:
+         material_type: slimefun
+         material: JP_WJZFK 
+         amount: 64        

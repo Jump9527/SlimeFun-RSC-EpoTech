@@ -854,7 +854,20 @@ JP_GWS1_EXPERIENCE_BOTTLE:
       modelId: 88788
       glow: true
       lore:
-      - '&7除了我以外都是输出槽'                                                             
+      - '&7除了我以外都是输出槽' 
+
+
+JP_GWS1_KWJ:
+  title: '§l§a鼓舞室Plus_§l§#C861D3矿物鸡'
+  slots:
+    0:
+      name: '&f提示'
+      material_type: mc
+      material: BIRCH_SIGN
+      modelId: 88788
+      glow: true
+      lore:
+      - '&7除了我以外都是输出槽'
 
 
 ###智能化工厂
