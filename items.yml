@@ -32,6 +32,7 @@ JP_CSWQ:
 
 JP_道具:
   lateInit: false
+  energy_capacity: 10000
   item_group: jp_prop
   item:
     name: "测试道具"
@@ -44,7 +45,20 @@ JP_道具:
   recipe:
        2:
           material_type: slimefun
-          material: JP_NULL          
+          material: JP_NULL    
+
+JP_头盔:
+  lateInit: false
+  item_group: jp_prop
+  item:
+    name: "&c测试头盔"
+    lore:
+    material: LEATHER_HELMET
+    amount: 1
+  energy_capacity: 1000000
+  placeable: false
+  recipe_type: NULL
+              
 
 JP_NULL:
   lateInit: false

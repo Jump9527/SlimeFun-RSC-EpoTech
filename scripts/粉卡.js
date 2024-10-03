@@ -2,6 +2,11 @@ function onUse(event) {
     const player = event.getPlayer();
     const invs = player.getInventory();
     const itemInMainHand = invs.getItemInMainHand();
+
+    if( ! handleItemInMainHand(player, "JP_FENKA")){
+        player.sendMessage("主手请持物品");
+        return;
+      }
     
     const dustArray = [
         { item: "IRON_DUST", probability: 0.05 },
@@ -56,6 +61,12 @@ function onUse(event) {
     }
 }
 
-function sendMessage(player, message) {
-    player.sendMessage(message);
-}
+function handleItemInMainHand(player, slimefunItemId) {
+    let itemInMainHand = player.getInventory().getItemInMainHand();
+    let sfItem = getSfItemByItem(itemInMainHand);
+    if (sfItem !== null) {
+      return slimefunItemId === sfItem.getId();
+    } else {
+      return false;
+    }
+  }

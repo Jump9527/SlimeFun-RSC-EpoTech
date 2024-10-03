@@ -186,7 +186,7 @@ function updateArrowDirection(arrow, targetEntity) {
 
   // 设置箭的飞行速度
 
-  let multiplier = 0.3;
+  let multiplier = 0.7;
   arrow.setVelocity(direction.multiply(multiplier));
 }
 
@@ -258,8 +258,6 @@ function onEntityDamageByEntity(e) {
 
   if (entity.getScoreboardTags().contains("三级怪物")) {
     let damager = e.getDamager();
-  
-    // 确保伤害来源是玩家
     if (damager instanceof org.bukkit.entity.Player) {
       let player = damager;
       let world = entity.getWorld();
@@ -290,10 +288,9 @@ function onEntityDamageByEntity(e) {
     damager.remove();
   }
 
+
   if (entity.getScoreboardTags().contains("四级怪物")) {
     let damager = e.getDamager();
-  
-    // 确保伤害来源是玩家
     if (damager instanceof org.bukkit.entity.Player) {
       let player = damager;
       let entityworld = entity.getWorld();
@@ -319,7 +316,7 @@ function onEntityDamageByEntity(e) {
       }
 
       //概念秒杀技
-      let Chance2 = 0.05
+      let Chance2 = 0.001
       if(chanceEvent(Chance2)){
         let playerworld =  player.getWorld();
         let playerlocation = player.getLocation();
@@ -327,88 +324,218 @@ function onEntityDamageByEntity(e) {
         // 20秒后移除笼子
         runLater(() => removeObsidianCage(player, playerworld, playerlocation, radius), 200);
       }
-  
-      
-      
+
+      //雷公助我
+      let Chance3 = 0.05
+      if(chanceEvent(Chance3)){
+        let playerworld =  player.getWorld();
+        //let playerlocation = player.getLocation();
+        let entitylocation = entity.getLocation();
+        let teleportLocation = entitylocation.add(0, 10, 0);
+        entity.teleport(teleportLocation);
+        entity.setGravity(false);
+        runLater(() => {
+          entity.teleport(entitylocation);
+          entity.setGravity(true);
+        }, 100);
+        runLater(() => {
+          player.sendTitle("§c§l雷公助我!!!!!!","", 0, 70, 20);
+          let lightningCount = 10;
+          for (let i = 0; i < lightningCount; i++) {
+            let randomX = entitylocation.getBlockX() + Math.floor(Math.random() * 31) - 15;
+            let randomZ = entitylocation.getBlockZ() + Math.floor(Math.random() * 31) - 15;
+            let randomY = playerworld.getHighestBlockYAt(randomX, randomZ);
+            let lightningLocation = new org.bukkit.Location(playerworld, randomX, randomY, randomZ);
+            let strikeLightning = playerworld.strikeLightning(lightningLocation);
+            strikeLightning.addScoreboardTag("闪电1000");
+          }
+        }, 50);       
+      }
+
+      // //禁锢
+      // let Chance4 = 0.05;
+      // if(chanceEvent(Chance4)) {
+      //   let playerlocation = player.getLocation();
+      //   const currentTime = new Date().getTime();
+      //   lastUseTime = currentTime;
+      //   runRepeating((t) => {
+      //    const currentTime = new Date().getTime();
+      //    player.teleport(playerlocation);
+      //    if (currentTime - lastUseTime > 15000) {
+      //       t.cancel();
+      //     }
+      //   }, 10, 1);
+      // }
     }
   }
+
+  if (entity instanceof org.bukkit.entity.Player){
+    let player = entity;
+    let helmet = player.getInventory().getHelmet();
+    let sfItem = getSfItemByItem(helmet);
+    if(sfItem !== null && sfItem.getId() === "JP_头盔"){
+      let damage = e.getFinalDamage();
+      let a = e.get
+      let charge = sfItem.getItemCharge(helmet);
+      if(charge < damage){
+        return;
+      } else{
+        sfItem.removeItemCharge(helmet, damage);
+        player.sendMessage(sfItem.getItemCharge(helmet));
+        e.setCancelled(true);
+      }
+    }
+  }
+
   
-  cancelDamage(e);
-  LightningStrike10(e);
+  tagdamagebyentitytag(e, "大火球", 0, "三级怪物");
+  tagdamagebyentitytag(e, "闪电1000", 1000, "四级怪物");
+  entitytagbymultbychance(e, "四级怪物", 2, 0.2);//暴击20%概率造成伤害x2倍
+  entitytagbychance(e, "四级怪物", 0.2);//闪避20%概率
+  entitytagbychancebymult(e, "四级怪物", 0.2, 0.2);//吸血20%概率+伤害x0.2倍数回血
+  entitytagbychancebystoptime(e, "四级怪物", 0.2, 5000);//眩晕20概率+15秒眩晕
+}
+
+function onEntityDamage(e){
+
+  //e.setCancelled(true);
+
+}
+
+function onPlayerMove(e){
+ // e.setCancelled(true);
 }
 
 
-// 取消火球伤害
-function cancelDamage(event) {
-  let entity = event.getEntity();
-  let damager = event.getDamager();
+
+function tagdamagebyentitytag(e, tag, damage, entitytag){
+  let entity = e.getEntity();
+  let damager = e.getDamager();
   
-  // 如果火球带有特定标签且击中了带有“三级怪物”标签的实体，则取消伤害
-  if (hasTag(damager, "大火球") &&
+  if (hasTag(entity, tag) && damager instanceof org.bukkit.entity.Player){
+    e.setDamage(damage);
+  }
+  
+  if (hasTag(damager, tag) &&
       entity instanceof org.bukkit.entity.LivingEntity &&
-      entity.getScoreboardTags().contains("三级怪物")) {
-    event.setCancelled(true);
+      entity.getScoreboardTags().contains(entitytag)){
+      e.setCancelled(true);
   }
 }
 
-
-function LightningStrike10(event) {
-  let entity = event.getEntity();
-  let damager = event.getDamager();
-  
-  // 如果闪电带有特定标签且伤害来源是玩家，则设置伤害为10
-  if (hasTag(entity, "闪电10") && damager instanceof org.bukkit.entity.Player) {
-    event.setDamage(10);
-  }
-  
-  // 如果实体带有“三级怪物”标签，则取消事件
-  if (hasTag(damager, "闪电10") &&
-      entity instanceof org.bukkit.entity.LivingEntity &&
-      entity.getScoreboardTags().contains("三级怪物")) {
-    event.setCancelled(true);
+//暴击
+function entitytagbymultbychance(e, entitytag, mult, Chance){
+  let entity = e.getDamager();
+  if (hasTag(entity, entitytag)){
+    if(chanceEvent(Chance)){
+      let newDamage = e.getDamage() * mult;
+      e.setDamage(newDamage);
+    }
   }
 }
+
+//闪避
+function entitytagbychance(e, entitytag, Chance){
+  let entity = e.getEntity();
+  if (hasTag(entity, entitytag)){
+    if(chanceEvent(Chance)){
+      e.setCancelled(true);
+    }
+  }
+}
+
+//免疫某种装备
+function entitytagbyitemid(e, entitytag){
+  let entity = e.getEntity();
+  let player = e.getDamager();
+  if (hasTag(entity, entitytag) && player instanceof org.bukkit.entity.Player){
+    let boots = player.getInventory().getBoots();
+    let sfItem = getSfItemByItem(boots);
+    if (sfItem !== null && sfItem.getId() === "ARMOUR_BOOTS"){
+      let lore = sfItem.getLore();
+      if(lore.some((line) => line.includes("无尽奇点"))){
+        e.setCancelled(true);
+        player.sendMessage("该生物从你身上的匠魂套汲取到了你的生命,并且无视了你的伤害");
+        entity.setHealth(entity.getMaxHealth());
+        runLater(() => player.setHealth(0), 10);
+      }
+    }
+  }
+}
+
+//吸血
+
+function entitytagbychancebymult(e, entitytag, Chance, mult){
+  let entity = e.getDamager();
+  if (hasTag(entity, entitytag)){
+    if(chanceEvent(Chance)){
+      let newHealth = entity.getHealth() + (e.getFinalDamage() * mult);
+      entity.setHealth(newHealth);
+    }
+  }
+}
+
+//眩晕
+function entitytagbychancebystoptime(e, entitytag, chance, stoptime){
+  let player = e.getEntity();
+  let entity = e.getDamager();
+  if(hasTag(entity, entitytag)){
+    if(player instanceof org.bukkit.entity.Player){
+      if(chanceEvent(chance)) {
+        let playerlocation = player.getLocation();
+        const currentTime = new Date().getTime();
+        lastUseTime = currentTime;
+        runRepeating((t) => {
+         const currentTime = new Date().getTime();
+         player.teleport(playerlocation);
+         if (currentTime - lastUseTime > stoptime){
+            t.cancel();
+          }
+        }, 10, 1);
+      }
+    }
+  }
+}
+
 
 
 // 检查实体是否有特定标签
-function hasTag(entity, customName) {
+function hasTag(entity, customName){
   return entity.getScoreboardTags().contains(customName);
 };
 
 
 
 // 生成黑曜石笼子
-function generateObsidianCage(player, world, location, radius) {
+function generateObsidianCage(player, world, location, radius){
   clearBlocks(world, location, radius, org.bukkit.Material.AIR, org.bukkit.Material.OBSIDIAN);
-  player.sendMessage("生成了一个黑曜石笼子。");
+  player.sendMessage("你需要在20s内逃出笼子,否则就会被秒杀");
 }
 
 // 移除黑曜石笼子并检查是否有玩家在里面
-function removeObsidianCage(player, world, location, radius) {
+function removeObsidianCage(player, world, location, radius){
   // 移除黑曜石笼子
   clearBlocks(world, location, radius, org.bukkit.Material.OBSIDIAN, org.bukkit.Material.AIR);
 
   // 检查并杀死笼子内的玩家
-  const entities = world.getNearbyEntities(location, radius * 2, radius * 2, radius * 2);
+  const entities = world.getNearbyEntities(location, radius, radius, radius);
   for (const entity of entities) {
     if (entity instanceof org.bukkit.entity.Player) {
       entity.setHealth(0);
       break; 
     }
   }
-
-  player.sendMessage("黑曜石笼子已被移除。");
 }
 
 //设定特定类型方块
-function clearBlocks(world, location, radius, fromMaterial, toMaterial) {
-  for (let x = -radius; x <= radius; x++) {
-    for (let y = -radius; y <= radius; y++) {
-      for (let z = -radius; z <= radius; z++) {
-        if (Math.abs(x) + Math.abs(y) + Math.abs(z) !== 0 && Math.sqrt(x * x + y * y + z * z) <= radius) {
+function clearBlocks(world, location, radius, fromMaterial, toMaterial){
+  for (let x = -radius; x <= radius; x++){
+    for (let y = -radius; y <= radius; y++){
+      for (let z = -radius; z <= radius; z++){
+        if (Math.abs(x) + Math.abs(y) + Math.abs(z) !== 0 && Math.sqrt(x * x + y * y + z * z) <= radius){
           const blockLocation = location.clone().add(x, y, z);
           const block = world.getBlockAt(blockLocation);
-          if (block.getType() === fromMaterial) {
+          if (block.getType() === fromMaterial){
             block.setType(toMaterial);
           }
         }
@@ -416,6 +543,7 @@ function clearBlocks(world, location, radius, fromMaterial, toMaterial) {
     }
   }
 }
+
 
 
 

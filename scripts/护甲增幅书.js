@@ -2,6 +2,11 @@ function onUse(event) {
   let player = event.getPlayer();
   let offHandItem = player.getInventory().getItemInOffHand();
 
+  if( ! handleItemInMainHand(player, "JP_HJZFS")){
+    player.sendMessage("主手请持对应增幅书");
+    return;
+  }
+
   if (offHandItem === null) {
     player.sendMessage("副手没有持有物品。");
     return;
@@ -109,5 +114,14 @@ function decrementItemAmount(item) {
     item.setAmount(item.getAmount() - 1);
   } else if (item) {
     item.setAmount(0);
+  }
+}
+function handleItemInMainHand(player, slimefunItemId) {
+  let itemInMainHand = player.getInventory().getItemInMainHand();
+  let sfItem = getSfItemByItem(itemInMainHand);
+  if (sfItem !== null) {
+    return slimefunItemId === sfItem.getId();
+  } else {
+    return false;
   }
 }
