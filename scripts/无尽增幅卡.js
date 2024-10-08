@@ -1,23 +1,12 @@
-//获取手中物品粘液id并进行对比
-function handleItemInMainHand(player, slimefunItemId) {
-  let itemInMainHand = player.getInventory().getItemInMainHand();
-  let sfItem = getSfItemByItem(itemInMainHand);
-  if (sfItem !== null) {
-    return slimefunItemId === sfItem.getId();
-  } else {
-    return false;
-  }
-}
-
 function onUse(event) {
     const player = event.getPlayer();
+    if(event.getHand() !== org.bukkit.inventory.EquipmentSlot.HAND){
+        player.sendMessage("主手请持增幅书");
+        return;
+    }
     const invs = player.getInventory();
+    
     const itemInMainHand = invs.getItemInMainHand();
-    let sfItem = getSfItemByItem(itemInMainHand);
-    if (sfItem !== null && ! (sfItem.getId() === "JP_WJZFK")){
-        sendMessage(player, "请主手持物品");
-        return
-    };
 
     const dustArray = [
         { item: "JP_SMZFS", probability: 0.001 },  //生命增幅书

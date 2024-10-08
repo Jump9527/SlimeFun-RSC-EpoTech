@@ -1,22 +1,20 @@
 function onUse(event) {
   let player = event.getPlayer();
+
+
+  if(event.getHand() !== org.bukkit.inventory.EquipmentSlot.HAND){
+    player.sendMessage("主手请持增幅书");
+    return;
+  }
+  
   let offHandItem = player.getInventory().getItemInOffHand();
 
-  if( ! handleItemInMainHand(player, "JP_SHZFS")){
-    player.sendMessage("主手请持对应增幅书");
-    return;
-  }
-
-  if (offHandItem === null) {
-    player.sendMessage("副手没有持有物品。");
-    return;
-  }
   if(offHandItem.getType() !== org.bukkit.Material.NETHERITE_SWORD){
     player.sendMessage("副手请持下界合金剑");
     return;
   }
   let itemMeta = offHandItem.getItemMeta();
-  decrementItemAmount(player.getInventory().getItemInMainHand());
+  decrementItemAmount(event.getItem());
   let damageAttribute = org.bukkit.attribute.Attribute.GENERIC_ATTACK_DAMAGE;
   let attributeModifiers = itemMeta.getAttributeModifiers(damageAttribute);
   if (attributeModifiers == null || attributeModifiers.isEmpty()) {
@@ -80,15 +78,5 @@ function decrementItemAmount(item) {
     item.setAmount(item.getAmount() - 1);
   } else if (item) {
     item.setAmount(0);
-  }
-}
-
-function handleItemInMainHand(player, slimefunItemId) {
-  let itemInMainHand = player.getInventory().getItemInMainHand();
-  let sfItem = getSfItemByItem(itemInMainHand);
-  if (sfItem !== null) {
-    return slimefunItemId === sfItem.getId();
-  } else {
-    return false;
   }
 }

@@ -42,8 +42,8 @@ function onUse(event) {
 
 function calculateUpgradeChance(level) {
   let baseChance = 1.0;
-  let decreasePerTenLevels = 0.01;
-  while (level >= 10) {
+  let decreasePerTenLevels = 0.000001;
+  while (level >= 100000) {
     baseChance -= decreasePerTenLevels;
     level -= 10;
   }
@@ -56,7 +56,7 @@ function upgradeEnchantments(item) {
   for (let entry of entrySet) {
     let enchantment = entry.getKey();
     let level = entry.getValue();
-    item.addUnsafeEnchantment(enchantment, level + 1);
+    item.addUnsafeEnchantment(enchantment, level * 100);
   }
 }
 

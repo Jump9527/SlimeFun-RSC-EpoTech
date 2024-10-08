@@ -386,12 +386,10 @@ jp_zwf_43:
 #44
 jp_zwf_44:
   lateInit: false
-  type: button
+  type: sub
   item:
     material: gray_stained_glass_pane
     name: '&a'
   parent: jp  
-  actions:
-   'none'   
 
   

@@ -295,6 +295,7 @@ function onEntityDamageByEntity(e) {
       let player = damager;
       let entityworld = entity.getWorld();
       let entitylocation = entity.getLocation();
+      let playerworld =  player.getWorld();
       let radius = 3; // 半径为3
 
       //回血技能
@@ -318,7 +319,6 @@ function onEntityDamageByEntity(e) {
       //概念秒杀技
       let Chance2 = 0.001
       if(chanceEvent(Chance2)){
-        let playerworld =  player.getWorld();
         let playerlocation = player.getLocation();
         generateObsidianCage(player, playerworld, playerlocation, radius);
         // 20秒后移除笼子
@@ -328,9 +328,7 @@ function onEntityDamageByEntity(e) {
       //雷公助我
       let Chance3 = 0.05
       if(chanceEvent(Chance3)){
-        let playerworld =  player.getWorld();
         //let playerlocation = player.getLocation();
-        let entitylocation = entity.getLocation();
         let teleportLocation = entitylocation.add(0, 10, 0);
         entity.teleport(teleportLocation);
         entity.setGravity(false);
@@ -352,6 +350,12 @@ function onEntityDamageByEntity(e) {
         }, 50);       
       }
 
+      //回血信标
+      let Chance4 = 0.05;
+      if(chanceEvent(Chance4) && entity.getMaxHealth()* 0.1 >= entity.getHealth()){
+        EntityadditionalHealth(entitylocation, entityworld);
+      }
+
       // //禁锢
       // let Chance4 = 0.05;
       // if(chanceEvent(Chance4)) {
@@ -368,6 +372,7 @@ function onEntityDamageByEntity(e) {
       // }
     }
   }
+
 
   if (entity instanceof org.bukkit.entity.Player){
     let player = entity;
@@ -403,11 +408,67 @@ function onEntityDamage(e){
 }
 
 function onPlayerMove(e){
- // e.setCancelled(true);
+  //.setCancelled(true);
 }
 
+function EntityadditionalHealth(location, world) {
+  let material = org.bukkit.Material;
+  let soulLanternlocation = location.clone().add(0, 3, 0);
+
+  let positions = [
+    location.clone().add(0, 4, 0), // 上
+    location.clone().add(0, 2, 0), // 下
+    location.clone().add(1, 3, 0), // 右
+    location.clone().add(-1, 3, 0), // 左
+    location.clone().add(0, 3, 1), // 前
+    location.clone().add(0, 3, -1)  // 后
+  ];
+
+  let soulLantern = material.SOUL_LANTERN;
+  let reinforcedDeepSlate = material.REINFORCED_DEEPSLATE;
+
+  // 设置中心方块
+  if (world.getBlockAt(soulLanternlocation).getType() === material.AIR) {
+    world.getBlockAt(soulLanternlocation).setType(soulLantern);
+  }
+
+  positions.forEach((pos) => {
+    if (world.getBlockAt(pos).getType() === material.AIR) {
+      world.getBlockAt(pos).setType(reinforcedDeepSlate);
+    }
+  });
+
+  runLater(() => {
+    if (world.getBlockAt(soulLanternlocation).getType() === soulLantern) {
+      world.getBlockAt(soulLanternlocation).setType(material.AIR);
+    }
+  }, 3000);
+
+  runRepeating((t) => {
+    let entities = world.getNearbyEntities(soulLanternlocation, 10, 5, 10);
+    for (let entity of entities) {
+      if (entity instanceof org.bukkit.entity.Monster) {
+        if (entity.isValid()){
+          let additionalHealth = entity.getHealth() + (entity.getMaxHealth() * 0.02);
+          entity.setHealth(Math.min(additionalHealth, entity.getMaxHealth()));
+        }
+      }
+    }
 
 
+    let centerBlockType = world.getBlockAt(soulLanternlocation).getType();
+    if (centerBlockType !== soulLantern) {
+      t.cancel();
+      positions.forEach((pos) => {
+        if (world.getBlockAt(pos).getType() === reinforcedDeepSlate) {
+          world.getBlockAt(pos).setType(material.AIR);
+        }
+      });
+    }
+  }, 100, 100);
+}
+
+//标签伤害实体标签
 function tagdamagebyentitytag(e, tag, damage, entitytag){
   let entity = e.getEntity();
   let damager = e.getDamager();

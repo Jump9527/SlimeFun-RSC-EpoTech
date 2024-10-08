@@ -1,3 +1,59 @@
+JP_测试:
+  title: '&a&测试'
+  script: "测试菜单"
+  slots:
+    0-9:
+      material: black_stained_glass_pane
+      name: '&a'
+    17-18:
+      material: black_stained_glass_pane
+      name: '&a'    
+    26-27:
+      material: black_stained_glass_pane
+      name: '&a' 
+    35-36:
+      material: black_stained_glass_pane
+      name: '&a'      
+    44-53:
+      material: black_stained_glass_pane
+      name: '&a' 
+    10-12:
+      material: blue_stained_glass_pane
+      name: '&a' 
+    37-39:
+      material: blue_stained_glass_pane
+      name: '&a' 
+    14-16:
+      material: orange_stained_glass_pane
+      name: '&a' 
+    41-43:
+      material: orange_stained_glass_pane
+      name: '&a'               
+    13:
+      name: '&f提示'
+      material_type: mc
+      material: BIRCH_SIGN
+      modelId: 88788
+      glow: true
+      lore:
+      - '&4左侧为输入槽'
+      - '&4右侧为输出槽'
+    22:
+      material_type: skull_hash
+      material: 26314d31b095e4d421760497be6a156f459d8c9957b7e6b1c12deb4e47860d71
+      name: '&a'
+    31:
+      material_type: skull_hash
+      material: 26314d31b095e4d421760497be6a156f459d8c9957b7e6b1c12deb4e47860d71
+      name: '&a'
+    40:
+      material: black_stained_glass_pane
+      name: '&a'
+      progressbar: true
+      progressBarItem:
+        material: clock
+
+
 SLFDJ_PLUS:
   title: '基础水力发电机Plus'
   slots:

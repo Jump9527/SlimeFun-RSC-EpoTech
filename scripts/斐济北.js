@@ -21,11 +21,11 @@ function onUse(event) {
     llamaspit.setCustomName("精液");
 
 
-    player.sendMessage(`${player.getName()}冲了${usageCount}次,终于射出来了`);
+    org.bukkit.Bukkit.broadcastMessage(`${player.getName()}冲了${usageCount}次,终于射出来了`);
 
     if (player.getFoodLevel() <= 0) {
       player.setHealth(0);
-      player.sendMessage(player.getName() + "死于手冲过度");
+      org.bukkit.Bukkit.broadcastMessage(player.getName() + "死于手冲过度");
       usageCount = 0;
     } else {
       player.setFoodLevel(0);

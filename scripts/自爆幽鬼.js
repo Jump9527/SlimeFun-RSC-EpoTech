@@ -3,6 +3,11 @@ let lastUseTime = 0;
 
 function onUse(event) {
   let player = event.getPlayer();
+  if(event.getHand() !== org.bukkit.inventory.EquipmentSlot.HAND){
+    player.sendMessage("主手请持物品");
+    return;
+  }
+
   let world = player.getWorld();
   let eyeLocation = player.getEyeLocation();
   let direction = eyeLocation.getDirection();

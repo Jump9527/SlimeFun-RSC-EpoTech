@@ -1,8 +1,7 @@
 function onUse(event) {
   let player = event.getPlayer();
-  let boots = player.getInventory().getHelmet();
-  let sfItem = getSfItemByItem(boots);
-  //getMaxItemCharge(boots);
-  player.sendMessage(sfItem.getItemCharge(boots));
+  let block = player.getTargetBlock(null, 10);
+  block.setType(org.bukkit.Material.AIR)
+
   
 }

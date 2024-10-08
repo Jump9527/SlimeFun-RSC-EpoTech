@@ -1,1 +1,28 @@
+JP_测试:
+  item_group: jp_zwf_44
+  item:
+    name: "&b测试机器"
+    material: DIAMOND_BLOCK
+  recipe_type: NULL
+  recipe:
+    1:
+      material_type: slimefun
+      material: RSC_EXAMPLE_MACHINE
+  input: [19,20,21, 28,29,30]
+  output: [23,24,25, 32,33,34]
+  work: 22
+  script: "测试菜单"
 
+JP_测试棋盘:
+  item_group: jp_zwf_44
+  item:
+    name: "&b测试棋盘"
+    material: DIAMOND_BLOCK
+  recipe_type: NULL
+  recipe:
+    1:
+      material_type: slimefun
+      material: RSC_EXAMPLE_MACHINE
+  input: []
+  output: []
+  script: "棋盘"

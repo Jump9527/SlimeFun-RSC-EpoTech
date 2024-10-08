@@ -16,7 +16,7 @@ JP_SM:
 
 JP_CSWQ:
   lateInit: false
-  item_group: jp_prop
+  item_group: jp_zwf_44
   item:
     name: "测试武器"
     lore:
@@ -33,10 +33,15 @@ JP_CSWQ:
 JP_道具:
   lateInit: false
   energy_capacity: 10000
-  item_group: jp_prop
+  item_group: jp_zwf_44
   item:
     name: "测试道具"
     lore:
+    - '§4右键切换模式 : §2 头盔'
+    - '建议使用网络链式'
+    - "bug请联系作者"
+    - '作者:J_ump'
+    - "QQ : 475977707 "
     material: DIAMOND_SWORD
     amount: 1
   placeable: false
@@ -49,7 +54,7 @@ JP_道具:
 
 JP_头盔:
   lateInit: false
-  item_group: jp_prop
+  item_group: jp_zwf_44
   item:
     name: "&c测试头盔"
     lore:
@@ -62,7 +67,7 @@ JP_头盔:
 
 JP_NULL:
   lateInit: false
-  item_group: jp_prop
+  item_group: jp_zwf_44
   item:
     name: '&c&l当你抽到这个的时候就代表你什么都没抽到'
     material: PAPER
@@ -331,16 +336,7 @@ ZWF_43:
     amount: 1
   placeable: false
   recipe_type: NULL
-
-ZWF_44:
-  lateInit: false
-  item_group: jp_zwf_44 
-  item:
-    name: '这只是个占位符'
-    material: PAPER
-    amount: 1
-  placeable: false
-  recipe_type: NULL           
+        
 ###基础材料
 
 JP_JXHX:
@@ -1132,7 +1128,7 @@ JP_JH_3:
 
 JP_JH_4:
   lateInit: false
-  item_group: jp_cl
+  item_group: jp_zwf_44
   item:
     name: '&#d3b730&l4&#a0ce64&l级&#6de698&l晶&#3afdcc&l核'
     lore:
@@ -1145,7 +1141,7 @@ JP_JH_4:
 
 JP_JH_5:
   lateInit: false
-  item_group: jp_cl
+  item_group: jp_zwf_44
   item:
     name: '&c&l5级晶核'
     lore:
@@ -1158,7 +1154,7 @@ JP_JH_5:
 
 JP_JH_6:
   lateInit: false
-  item_group: jp_cl
+  item_group: jp_zwf_44
   item:
     name: '&c&l世界晶核'
     lore:
@@ -1303,7 +1299,7 @@ RPG_ZOMBIE_3:
 
 RPG_ZOMBIE_4:
   lateInit: false
-  item_group: jp_prop
+  item_group: jp_zwf_44
   item:
     name: '测试怪4级'
     lore:
@@ -1843,9 +1839,33 @@ JP_YXJ:
   recipe_type: 'JP_GOD_CRAFTING_TABLE'
   script: 饮血剑
   recipe:
+    1:
+      material_type: slimefun
+      material: JP_WGKJ
     2:
       material_type: slimefun
-      material: JP_NULL   
+      material: JP_JH_4
+    3:
+      material_type: slimefun
+      material: JP_WGKJ
+    4:
+      material_type: slimefun
+      material: JP_WGKJ
+    5:
+      material_type: slimefun
+      material: JP_JH_3
+    6:
+      material_type: slimefun
+      material: JP_WGKJ
+    7:
+      material_type: slimefun
+      material: JP_WGKJ
+    8:
+      material_type: slimefun
+      material: INFINITE_INGOT
+    9:
+      material_type: slimefun
+      material: JP_WGKJ           
 
 JP_JHZR:
   lateInit: false
@@ -1864,9 +1884,33 @@ JP_JHZR:
   recipe_type: JP_GOD_CRAFTING_TABLE
   script: 净魂之刃
   recipe:
+    1:
+      material_type: slimefun
+      material: JP_WGKJ
     2:
       material_type: slimefun
-      material: JP_NULL
+      material: JP_JH_4
+    3:
+      material_type: slimefun
+      material: JP_WGKJ
+    4:
+      material_type: slimefun
+      material: JP_WGKJ
+    5:
+      material_type: slimefun
+      material: JP_JH_3
+    6:
+      material_type: slimefun
+      material: JP_WGKJ
+    7:
+      material_type: slimefun
+      material: JP_WGKJ
+    8:
+      material_type: slimefun
+      material: JP_YXJ
+    9:
+      material_type: slimefun
+      material: JP_WGKJ
 
 JP_QHFMS:
   lateInit: false
@@ -1887,7 +1931,25 @@ JP_QHFMS:
   recipe:
     5:
       material_type: slimefun
-      material: JP_WJZFK    
+      material: JP_WJZFK
+
+JP_倍数版:
+  lateInit: false
+  item_group: jp_zwf_44
+  item:
+    name: '&#2dfb89&l这是老J测试的附魔书'
+    lore:
+      - '&e╔════════════════════════════════════╗'
+      - '&e║&#FD1997&l右键强化附魔(副手持需要强化的物品)100倍'
+      - '&e║&#FD1997&l每100000级概率-0.000001,强化失败装备销毁'
+      - '&e╚════════════════════════════════════╝'
+    material: PAPER
+    amount: 1
+    glow: true
+  placeable: false
+  script: 强化附魔书倍数版本
+  recipe_type: NULL
+        
 
 JP_SHZFS:
   lateInit: false
@@ -1917,9 +1979,10 @@ JP_HJZFS:
     name: '&#4b23fb&l护&#7435fc&l甲&#9d47fc&l增&#c658fd&l幅&#ef6afd&l书'
     lore:
       - '&e╔════════════════════════════════════╗'
-      - '&e║&#FD1997&l右键增幅护甲(副手持装备)'
+      - '&e║&#FD1997&l右键增幅护甲'
       - '&e║&#FD1997&l每10点护甲概率-0.01,强化失败装备销毁'
       - '&e╚════════════════════════════════════╝'
+      - '§4§lShift + 右键切换模式 : §2§l 头盔'
     material: PAPER
     amount: 1
     glow: true
@@ -1938,9 +2001,10 @@ JP_KJRXZFS:
     name: '&#4b23fb&l盔甲&#662ffb&l韧性&#823bfc&l增幅&#9d47fc&l书&#b852fc&l&#d45efd&l&#ef6afd'
     lore:
       - '&e╔════════════════════════════════════╗'
-      - '&e║&#FD1997&l右键增幅盔甲韧性(副手持装备)'
+      - '&e║&#FD1997&l右键增幅盔甲韧性'
       - '&e║&#FD1997&l每1点护甲韧性概率-0.2,强化失败装备销毁'
       - '&e╚════════════════════════════════════╝'
+      - '§4§lShift + 右键切换模式 : §2§l 头盔'
     material: PAPER
     amount: 1
     glow: true
@@ -1959,9 +2023,10 @@ JP_SMZFS:
     name: '&#4b23fb&l生&#7435fc&l命&#9d47fc&l增&#c658fd&l幅&#ef6afd&l书'
     lore:
       - '&e╔════════════════════════════════════╗'
-      - '&e║&#FD1997&l右键增幅生命(副手持装备)'  
-      - '&e║&#FD1997&l每1点生命概率-0.1,强化失败装备销毁' 
+      - '&e║&#FD1997&l右键增幅生命'  
+      - '&e║&#FD1997&l每1点生命概率-0.05,强化失败装备销毁' 
       - '&e╚════════════════════════════════════╝'
+      - '§4§lShift + 右键切换模式 : §2§l 头盔'
     material: PAPER
     amount: 1
     glow: true
@@ -2033,29 +2098,32 @@ JP_ZBYG:
   recipe_type: JP_GOD_CRAFTING_TABLE
   recipe:
     1:
-      material_type: slimefun
-      material: JP_NULL
+      material_type: mc
+      material: TNT
     2:
-      material_type: slimefun
-      material: JP_NULL
+      material_type: mc
+      material: TNT
     3:
-      material_type: slimefun
-      material: JP_NULL
+      material_type: mc
+      material: TNT
     4:
+      material_type: mc
+      material: TNT
+    5:
       material_type: slimefun
-      material: JP_NULL        
+      material: ANCIENT_RUNE_FIRE           
     6:
-      material_type: slimefun
-      material: JP_NULL 
+      material_type: mc
+      material: TNT 
     7:
-      material_type: slimefun
-      material: JP_NULL 
+      material_type: mc
+      material: TNT 
     8:
-      material_type: slimefun
-      material: JP_NULL 
+      material_type: mc
+      material: TNT 
     9:
-      material_type: slimefun
-      material: JP_NULL         
+      material_type: mc
+      material: TNT         
 
 JP_WJZFK:
   lateInit: false
@@ -2076,5 +2144,38 @@ JP_WJZFK:
   recipe:
     5:
       material_type: slimefun
-      material: INFINITE_INGOT    
+      material: INFINITE_INGOT 
 
+JP_黑棋:
+  lateInit: false
+  item_group: jp_zwf_44
+  item:
+    name: "&l黑棋"
+    lore:
+    material_type: skull_hash
+    material: 55029257465c5eabfd3d1940971e3fd6e761ea3b3149f6d91c8c676f0a5f883
+    amount: 1
+  placeable: false
+  recipe_type: 'JP_GOD_CRAFTING_TABLE'
+  script: 黑棋 
+  recipe:
+       2:
+          material_type: slimefun
+          material: JP_NULL         
+
+JP_白棋:
+  lateInit: false
+  item_group: jp_zwf_44
+  item:
+    name: "&l白棋"
+    lore:
+    material_type: skull_hash
+    material: 36b03b40158bb6e98b20766b1d46d9182c15a1a4cf439e13a7670b87d12757b
+    amount: 1
+  placeable: false
+  recipe_type: 'JP_GOD_CRAFTING_TABLE'
+  script: 白棋 
+  recipe:
+       2:
+          material_type: slimefun
+          material: JP_NULL 

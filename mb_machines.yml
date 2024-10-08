@@ -484,4 +484,130 @@ JP_GOD_CRAFTING_TABLE:
       output:
          material_type: slimefun
          material: JP_WJZFK 
-         amount: 64        
+         amount: 64
+    JP_YXJ:
+      input:
+       1:
+          material_type: slimefun
+          material: JP_WGKJ
+          amount: 1  
+       2:
+          material_type: slimefun
+          material: JP_JH_4
+          amount: 1 
+       3:
+          material_type: slimefun
+          material: JP_WGKJ
+          amount: 1   
+       4:
+          material_type: slimefun
+          material: JP_WGKJ
+          amount: 1  
+       5:
+          material_type: slimefun
+          material: JP_JH_3
+          amount: 1 
+       6:
+          material_type: slimefun
+          material: JP_WGKJ
+          amount: 1
+       7:
+          material_type: slimefun
+          material: JP_WGKJ
+          amount: 1  
+       8:
+          material_type: slimefun
+          material: INFINITE_INGOT
+          amount: 64 
+       9:
+          material_type: slimefun
+          material: JP_WGKJ
+          amount: 1           
+      output:
+         material_type: slimefun
+         material: JP_YXJ 
+         amount: 1
+    JP_JHZR:
+      input:
+       1:
+          material_type: slimefun
+          material: JP_WGKJ
+          amount: 1  
+       2:
+          material_type: slimefun
+          material: JP_JH_4
+          amount: 1 
+       3:
+          material_type: slimefun
+          material: JP_WGKJ
+          amount: 1   
+       4:
+          material_type: slimefun
+          material: JP_WGKJ
+          amount: 1  
+       5:
+          material_type: slimefun
+          material: JP_JH_3
+          amount: 1 
+       6:
+          material_type: slimefun
+          material: JP_WGKJ
+          amount: 1
+       7:
+          material_type: slimefun
+          material: JP_WGKJ
+          amount: 1  
+       8:
+          material_type: slimefun
+          material: JP_YXJ
+          amount: 1 
+       9:
+          material_type: slimefun
+          material: JP_WGKJ
+          amount: 1           
+      output:
+         material_type: slimefun
+         material: JP_JHZR 
+         amount: 1 
+    JP_ZBYG:
+      input:
+       1:
+          material_type: mc
+          material: TNT
+          amount: 1  
+       2:
+          material_type: mc
+          material: TNT
+          amount: 1 
+       3:
+          material_type: mc
+          material: TNT
+          amount: 1   
+       4:
+          material_type: mc
+          material: TNT
+          amount: 1  
+       5:
+          material_type: slimefun
+          material: ANCIENT_RUNE_FIRE
+          amount: 1 
+       6:
+          material_type: mc
+          material: TNT
+          amount: 1
+       7:
+          material_type: mc
+          material: TNT
+          amount: 1  
+       8:
+          material_type: mc
+          material: TNT
+          amount: 1 
+       9:
+          material_type: mc
+          material: TNT
+          amount: 1           
+      output:
+         material_type: slimefun
+         material: JP_ZBYG 
+         amount: 1                 
