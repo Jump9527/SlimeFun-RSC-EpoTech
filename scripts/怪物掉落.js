@@ -345,7 +345,7 @@ function onEntityDamageByEntity(e) {
             let randomY = playerworld.getHighestBlockYAt(randomX, randomZ);
             let lightningLocation = new org.bukkit.Location(playerworld, randomX, randomY, randomZ);
             let strikeLightning = playerworld.strikeLightning(lightningLocation);
-            strikeLightning.addScoreboardTag("闪电1000");
+            strikeLightning.addScoreboardTag("闪电100");
           }
         }, 50);       
       }
@@ -370,6 +370,50 @@ function onEntityDamageByEntity(e) {
       //     }
       //   }, 10, 1);
       // }
+
+      //召唤技能(10僵尸100血30攻击)
+      let Chance5 = 0.05;
+      if(chanceEvent(Chance5)){
+        let zombieCount = 10;
+
+        player.sendTitle("§c§l复活吧!额滴爱人!","", 0, 70, 20);
+
+        runLater(() => {
+          for (let i = 0; i < zombieCount; i++) {
+            let x = entitylocation.getX() + (Math.random() * 10 - 5);
+            let y = entitylocation.getY() + (Math.random() * 5);
+            let z = entitylocation.getZ() + (Math.random() * 10 - 5);
+        
+            let location = new org.bukkit.Location(entityworld, x, y, z);
+            if (entityworld.getBlockAt(location).getType() == org.bukkit.Material.AIR) {
+              let zombie = entityworld.spawnEntity(location, org.bukkit.entity.EntityType.ZOMBIE);
+                  zombie.getAttribute(org.bukkit.attribute.Attribute.GENERIC_MAX_HEALTH).setBaseValue(100.0);
+                  zombie.setHealth(100.0);
+  
+                  zombie.getAttribute(org.bukkit.attribute.Attribute.GENERIC_ATTACK_DAMAGE).setBaseValue(30.0);
+                  zombie.setTarget(player);
+            }
+          }
+        }, 50);
+      }
+
+      let Chance6 = 0.05;
+      if(chanceEvent(Chance6)){
+        player.sendTitle("§c§l来吧,尝下这招 火球术","", 0, 70, 20);
+        let playerlocation = player.getLocation();
+        runLater(() => {
+          let lightningCount = 20;
+          for (let i = 0; i < lightningCount; i++) {
+            let randomX = entitylocation.getBlockX() + Math.floor(Math.random() * 31) - 15;
+            let randomZ = entitylocation.getBlockZ() + Math.floor(Math.random() * 31) - 15;
+            let randomY = entitylocation.getBlockY() + 10;
+            let lightningLocation = new org.bukkit.Location(playerworld, randomX, randomY, randomZ);
+            let fireball = playerworld.spawn(lightningLocation, org.bukkit.entity.SmallFireball, org.bukkit.event.entity.CreatureSpawnEvent.SpawnReason.CUSTOM);
+            let direction =playerlocation.toVector().subtract(lightningLocation.toVector()).normalize();
+            fireball.setDirection(direction);
+          }
+        }, 50); 
+      }
     }
   }
 
@@ -394,7 +438,8 @@ function onEntityDamageByEntity(e) {
 
   
   tagdamagebyentitytag(e, "大火球", 0, "三级怪物");
-  tagdamagebyentitytag(e, "闪电1000", 1000, "四级怪物");
+  tagdamagebyentitytag(e, "闪电10", 10, "三级怪物");
+  tagdamagebyentitytag(e, "闪电100", 100, "四级怪物");
   entitytagbymultbychance(e, "四级怪物", 2, 0.2);//暴击20%概率造成伤害x2倍
   entitytagbychance(e, "四级怪物", 0.2);//闪避20%概率
   entitytagbychancebymult(e, "四级怪物", 0.2, 0.2);//吸血20%概率+伤害x0.2倍数回血

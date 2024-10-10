@@ -60,7 +60,7 @@ function updateItemLore(player) {
   itemMeta.setLore(lore);
   item.setItemMeta(itemMeta);
   if (usageCount >= 10) {
-    player.getInventory().removeItem(item);
+    item.setAmount(item.getAmount() - 1);
     usageCount = 0; 
   }
 }

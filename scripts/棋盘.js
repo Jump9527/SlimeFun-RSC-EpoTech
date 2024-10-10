@@ -4,6 +4,21 @@ var Type = org.bukkit.Material.WHITE_STAINED_GLASS;
 var white = org.bukkit.Material.ACACIA_BUTTON;
 var black = org.bukkit.Material.POLISHED_BLACKSTONE_BUTTON;
 
+var lastActionTime = {};
+
+function isInCooldown(playerUUID) {
+  let lastTime = lastActionTime[playerUUID];
+  if (lastTime) {
+    let currentTime = new Date().getTime();
+    return (currentTime - lastTime) < 6000; // 6000毫秒等于1分钟
+  }
+  return false;
+}
+
+function setLastActionTime(playerUUID) {
+  lastActionTime[playerUUID] = new Date().getTime();
+}
+
 function placeAndRemoval(event, range, delay) {
   let block = event.getBlock();
   let location = block.getLocation();
@@ -51,9 +66,19 @@ function removeBUTTON(location, world, white, black, range) {
 }
 
 function onPlace(event) {
+
+  let player = event.getPlayer();
+
+  // 检查玩家是否在冷却时间内
+  if (isInCooldown(player.getUniqueId())) {
+    player.sendMessage("操作太频繁，请等待一段时间后再试。");
+    return;
+  }
+
   if(event.getPlayer() instanceof org.bukkit.entity.Player){
     placeAndRemoval(event, range, 400);
   }
+  setLastActionTime(player.getUniqueId());
 }
 
 function onBreak(event) {

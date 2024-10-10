@@ -1128,7 +1128,7 @@ JP_JH_3:
 
 JP_JH_4:
   lateInit: false
-  item_group: jp_zwf_44
+  item_group: jp_cl
   item:
     name: '&#d3b730&l4&#a0ce64&l级&#6de698&l晶&#3afdcc&l核'
     lore:
@@ -1299,12 +1299,12 @@ RPG_ZOMBIE_3:
 
 RPG_ZOMBIE_4:
   lateInit: false
-  item_group: jp_zwf_44
+  item_group: jp_prop
   item:
-    name: '测试怪4级'
+    name: '&#084cfb&l僵&#5a5ee9&l尸&#ab71d8&l之&#fd83c6&l王'
     lore:
       - '&e╔════════════════════════════════════╗'
-      - '&e║&c&l蕴含着雷电和火焰的力量'
+      - '&e║&c&l无法想象的强大'
       - '&e╚════════════════════════════════════╝'
     material_type: saveditem
     material: RPG_4
@@ -1314,31 +1314,31 @@ RPG_ZOMBIE_4:
   recipe:
     1:
       material_type: slimefun
-      material: ANCIENT_RUNE_LIGHTNING
+      material: ANCIENT_RUNE_AIR
     2:
       material_type: slimefun
-      material: MAGIC_LUMP_3
+      material: ANCIENT_RUNE_VILLAGERS
     3:
       material_type: slimefun
       material: ANCIENT_RUNE_FIRE 
     4:
       material_type: slimefun
-      material: ENDER_LUMP_3
+      material: ESSENCE_OF_AFTERLIFE
     5:
       material_type: slimefun
-      material: JP_JH_2
+      material: JP_JH_3
     6:
       material_type: slimefun
-      material: ENDER_LUMP_3
+      material: ESSENCE_OF_AFTERLIFE
     7:
       material_type: slimefun
-      material: ANCIENT_RUNE_FIRE
+      material: ANCIENT_RUNE_LIGHTNING
     8:
       material_type: slimefun
-      material: MAGIC_LUMP_3
+      material: ANCIENT_RUNE_ENCHANTMENT
     9:
       material_type: slimefun
-      material: ANCIENT_RUNE_LIGHTNING  
+      material: ANCIENT_RUNE_SOULBOUND 
           
 #提取材料
 
@@ -2144,38 +2144,91 @@ JP_WJZFK:
   recipe:
     5:
       material_type: slimefun
-      material: INFINITE_INGOT 
+      material: INFINITE_INGOT
+
+JP_村民棒:
+  lateInit: false
+  item_group: jp_prop
+  item:
+    name: "&#82fbe4&l村&#c0c2e5&l民&#fd88e5&l棒"
+    lore: 
+      - '&e╔════════════════════════════════════╗'
+      - '&e║ &l&c右键召唤村民'
+      - '&e╚════════════════════════════════════╝'
+    material_type: mc
+    material: LIGHTNING_ROD
+    amount: 1
+  placeable: false
+  recipe_type: JP_KJJQ
+  script: 村民棒 
+  recipe:
+       1:
+          material_type: mc
+          material: EMERALD_BLOCK
+       2:
+          material_type: mc
+          material: EMERALD_BLOCK
+       3:
+          material_type: mc
+          material: EMERALD_BLOCK
+       4:
+          material_type: mc
+          material: EMERALD_BLOCK
+       5:
+          material_type: mc
+          material: DIAMOND_BLOCK
+       6:
+          material_type: mc
+          material: EMERALD_BLOCK
+       7:
+          material_type: mc
+          material: EMERALD_BLOCK
+       8:
+          material_type: mc
+          material: EMERALD_BLOCK
+       9:
+          material_type: mc
+          material: EMERALD_BLOCK               
+                 
 
 JP_黑棋:
   lateInit: false
-  item_group: jp_zwf_44
+  item_group: jp_prop
   item:
-    name: "&l黑棋"
+    name: "&e&l五子棋-&8&l黑棋"
     lore:
+      - '&e╔════════════════════════════════════╗'
+      - '&e║ &#fde52b&l右键放置,可远距离放置'
+      - '&e║ &#fde52b&l可无限放置'
+      - '&e╚════════════════════════════════════╝'
     material_type: skull_hash
     material: 55029257465c5eabfd3d1940971e3fd6e761ea3b3149f6d91c8c676f0a5f883
     amount: 1
   placeable: false
-  recipe_type: 'JP_GOD_CRAFTING_TABLE'
+  recipe_type: ENHANCED_CRAFTING_TABLE
   script: 黑棋 
   recipe:
-       2:
-          material_type: slimefun
-          material: JP_NULL         
+       1:
+          material_type: mc
+          material: POLISHED_BLACKSTONE_BUTTON         
 
 JP_白棋:
   lateInit: false
-  item_group: jp_zwf_44
+  item_group: jp_prop
   item:
-    name: "&l白棋"
+    name: "&e&l五子棋-&f&l白棋"
     lore:
+      - '&e╔════════════════════════════════════╗'
+      - '&e║ &#fde52b&l右键放置,可远距离放置'
+      - '&e║ &#fde52b&l可无限放置'
+      - '&e╚════════════════════════════════════╝'
     material_type: skull_hash
     material: 36b03b40158bb6e98b20766b1d46d9182c15a1a4cf439e13a7670b87d12757b
     amount: 1
   placeable: false
-  recipe_type: 'JP_GOD_CRAFTING_TABLE'
+  recipe_type: ENHANCED_CRAFTING_TABLE
   script: 白棋 
   recipe:
-       2:
-          material_type: slimefun
-          material: JP_NULL 
+       1:
+          material_type: mc
+          material: ACACIA_BUTTON                                      
