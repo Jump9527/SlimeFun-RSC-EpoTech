@@ -3,14 +3,13 @@ name: EpoTech
 depends: []
 scriptListener: 怪物掉落
 pluginDepends:
-- FNAmplifications
 - InfinityExpansion
 - LiteXpansion
 - GuizhanLibPlugin
 - MomoTech
 - Supreme
 - FoxyMachines
-version: v1.0.6
+version: v1.0.7
 description: 脑洞大爆炸
 authors:
 - J_ump

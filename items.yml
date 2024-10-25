@@ -354,7 +354,7 @@ JP_JXHX:
   recipe:
     1:
       material_type: slimefun
-      material: FN_MACHINERY_BASIC_MACHINE_BLOCK
+      material: JP_JCJXFK
       amount: 1
     2:
       material_type: slimefun
@@ -362,7 +362,7 @@ JP_JXHX:
       amount: 1
     3:
       material_type: slimefun
-      material: FN_MACHINERY_BASIC_MACHINE_BLOCK
+      material: JP_JCJXFK
       amount: 1
     4:
       material_type: slimefun
@@ -466,7 +466,7 @@ JP_JXKJ:
       amount: 1
     4:
       material_type: slimefun
-      material: FN_MACHINERY_COMPONENT_PART
+      material: JP_SRHX
       amount: 1
     5:
       material_type: slimefun
@@ -474,7 +474,7 @@ JP_JXKJ:
       amount: 1
     6:
       material_type: slimefun
-      material: FN_MACHINERY_COMPONENT_PART
+      material: JP_SRHX
       amount: 1
     7:
       material_type: slimefun
@@ -487,7 +487,100 @@ JP_JXKJ:
     9:
       material_type: slimefun
       material: MACHINE_PLATE
+      amount: 1  
+
+JP_JCJXFK:
+  lateInit: false
+  item_group: jp_cl
+  item:
+    name: '&e&4基础机械方块'
+    lore:
+    - '&b组装机器必备的基础机械方块'
+    material_type: skull_hash
+    material: 88522d73d08e97216915e9c2446e400be7bd8cf614177493f38388d5276080a
+    amount: 1
+  placeable: false
+  recipe_type: ENHANCED_CRAFTING_TABLE
+  recipe:
+    1:
+      material_type: slimefun
+      material: JP_WGKJ
+      amount: 1
+    2:
+      material_type: slimefun
+      material: JP_WGKJ
+      amount: 1
+    3:
+      material_type: slimefun
+      material: JP_WGKJ
+      amount: 1
+    4:
+      material_type: slimefun
+      material: JP_WGKJ
+      amount: 1
+    6:
+      material_type: slimefun
+      material: JP_WGKJ
+      amount: 1
+    7:
+      material_type: slimefun
+      material: JP_WGKJ
+      amount: 1
+    8:
+      material_type: slimefun
+      material: JP_WGKJ
+      amount: 1
+    9:
+      material_type: slimefun
+      material: JP_WGKJ
+      amount: 1       
+
+JP_SRHX:
+  lateInit: false
+  item_group: jp_cl
+  item:
+    name: '&3&l散热核心'
+    lore:
+    - '&n&6纳米降温'
+    material_type: skull_hash
+    material: 999edafec1cb6c3e1f01ce1d8304aead0c5db019a7eae4a83f8f2f1e5ff99bbc
+    amount: 1
+  placeable: false
+  recipe_type: ENHANCED_CRAFTING_TABLE
+  recipe:
+    1:
+      material_type: slimefun
+      material: COOLING_UNIT
+      amount: 1
+    2:
+      material_type: slimefun
+      material: COOLING_UNIT
+      amount: 1
+    3:
+      material_type: slimefun
+      material: COOLING_UNIT
+      amount: 1
+    4:
+      material_type: slimefun
+      material: FREEZER_2
+      amount: 1
+    6:
+      material_type: slimefun
+      material: FREEZER_2
+      amount: 1
+    7:
+      material_type: slimefun
+      material: COOLING_UNIT
+      amount: 1
+    8:
+      material_type: slimefun
+      material: COOLING_UNIT
+      amount: 1
+    9:
+      material_type: slimefun
+      material: COOLING_UNIT
       amount: 1   
+
 
 JP_WKS:
   item_group: jp_cl

@@ -446,15 +446,6 @@ function onEntityDamageByEntity(e) {
   entitytagbychancebystoptime(e, "四级怪物", 0.2, 5000);//眩晕20概率+15秒眩晕
 }
 
-function onEntityDamage(e){
-
-  //e.setCancelled(true);
-
-}
-
-function onPlayerMove(e){
-  //.setCancelled(true);
-}
 
 function EntityadditionalHealth(location, world) {
   let material = org.bukkit.Material;
