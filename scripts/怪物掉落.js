@@ -1,4 +1,18 @@
-
+let ItemStack = org.bukkit.inventory.ItemStack;
+let Material = org.bukkit.Material;
+//安全获取物品
+function getItemSafe(item) {
+  if (item === null) {
+    return new ItemStack(Material.AIR);
+  }
+  //复制类型数量Meta
+  let safeItem = new ItemStack(item.getType());
+  safeItem.setAmount(item.getAmount());
+  if (item.hasItemMeta()) {
+    safeItem.setItemMeta(item.getItemMeta());
+  }
+  return safeItem;
+}
 //概率
 function chanceEvent(chance) {
   if (typeof chance !== 'number' || chance < 0 || chance > 1) {
@@ -46,7 +60,7 @@ function zidingyiguaiwu(event,killer) {
   if (levelIndex !== -1) {
     const level = levels[levelIndex];
     const slimefunItem = getSfItemById(level.item);
-    const itemStack = new org.bukkit.inventory.ItemStack(slimefunItem.getItem());
+    const itemStack = getItemSafe(slimefunItem.getItem());
     const location = event.getLocation(); 
     const world = location.getWorld();
 
@@ -87,7 +101,7 @@ function zidingyiguaiwuByzidingyiwuqi(killer, entity) {
 
   const drop = drops[dropIndex];
   const slimefunItem = getSfItemById(drop.item);
-  const itemStack = new org.bukkit.inventory.ItemStack(slimefunItem.getItem());
+  const itemStack = getItemSafe(slimefunItem.getItem());
   const location = entity.getLocation();
   const world = entity.getWorld();
 
@@ -128,7 +142,7 @@ function pickaxeDropItems(player, e) {
 
   const drop = drops[dropIndex];
   const slimefunItem = getSfItemById(drop.item);
-  const itemStack = new org.bukkit.inventory.ItemStack(slimefunItem.getItem());
+  const itemStack = getItemSafe(slimefunItem.getItem());
   const location = block.getLocation();
   const world = block.getWorld();
 
