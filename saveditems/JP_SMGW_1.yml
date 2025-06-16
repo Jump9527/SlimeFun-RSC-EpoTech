@@ -1,9 +1,0 @@
-item:
-  ==: org.bukkit.inventory.ItemStack
-  v: 3955
-  type: ZOMBIE_SPAWN_EGG
-  meta:
-    ==: ItemMeta
-    meta-type: SPAWN_EGG
-    display-name: '{"text":"神秘生物","italic":false,"color":"gold","bold":true}'
-    internal: H4sIAAAAAAAA/2XPQUpDMRAG4F+ttQ26EUQXgl7ALryA1lUP4D7MS4e88PoSSaZgXb2tt3AnegLxPGKvYeGZiLob+L/5h1GAgmIvTlYXQnYMRSLRVUvhpADs7WJQUeLpOTDCtpvjwLLn6MyEYhsivvPrp5wf/8q1hKWtPaeU5bTIoyJFyDR6Ti1ZLo3I7uSPa3wwTbWZ/h8/u1vQiuOk/0g7LxzJiAteR/I/5Vdd3jjN5aVVR04uCXlT+M0s88PMW7rXNdNCauxgOOsn4LJnw4fQVo7HGNySTaNNsIX9j7du/f782b2uH1+ALyhkw3Z7AQAA
