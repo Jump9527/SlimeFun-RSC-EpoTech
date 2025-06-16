@@ -10,3 +10,7 @@ JP_KJJQ:
 JP_GOD_CRAFTING_TABLE:
   name: "&l&#c9372c神&#a9585a话&#897a87工&#689bb5作&#48bce3台"
   material: CRAFTING_TABLE
+
+JP_GJZZT: 
+ name: "&#c5a41d&l工&#9caf50&l具&#73ba82&l组&#4ac4b5&l装&#21cfe7&l台"
+ material: SMITHING_TABLE

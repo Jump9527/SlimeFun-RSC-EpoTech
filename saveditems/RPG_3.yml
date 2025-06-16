@@ -1,8 +1,9 @@
 item:
   ==: org.bukkit.inventory.ItemStack
-  v: 3465
+  v: 3955
   type: VEX_SPAWN_EGG
   meta:
     ==: ItemMeta
     meta-type: SPAWN_EGG
-    internal: H4sIAAAAAAAA/1XOv0vDUBAH8IuNmgRFFMRV3uJSHBy7tSo6iFMRQSRckjN55MeD9y5YEaFrEfw3xNLRQcQ/Rwxu/gnG0mi98e7Dfb8egAfuYcGSb/oYt8A9kVfUl2FqAHbWXLDrrXEAwIKV95dR9fr4MRxXoycL1vdLwyo/xZzOpJFBRpYFy0eZupZFbLVg6Zgw4wRg4dwB7w/D3sWtYBqw6IjPyVv1cC/aIlBZJDqsS2qLUGVK18cIdeprisTdpQtel1nLoGQyXt3GdsCePluNqSAtw13UudKLYPfQUPerJo3Y/BXMGKZ+hDnGNJO95zm50cgcB34ybT9jBzjHtv5F+qzKOCnImCZ8G37mG5QBSV1aAQAA
+    display-name: '{"text":"鬼王","italic":false,"color":"dark_red","bold":true}'
+    internal: H4sIAAAAAAAA/3XSMUvDQBQH8JdWaxuqgyg6OEhmdXAsglUHnZwcBJHwkrymR5NcuXtpKyJ0LYJfQxQ/gIgfRyxuDk5OXmsTseJwy7vf+3N372wAG2xKWPDFJmNYhoIIoNihXgVmTjDUZQCwoPryOBg+3b7274eDOwvmDiPZFUloFaF0RBhx06CPCtjIrISXMmnb9JW/0+ZDSkgJfwtVLNUszHioaf9oBMb7K7/2XZZp2ExI64nce8/lci6Z0W+5AcYY0sQd/CSuZa6VSL/ljagiLTRj4md8t5/z1anYvGtC65DTpSmq20RBdtD1v6wRXZh3+sXq9ZwtZizGntscP2R2mc8xsg9SzTI+xphg++zSYeqxU3PeHp6HN9fOhuPLSCpTCFCNrhiYkiejwKmxSunqvAIL6LPokEuNBvk8nkrBggXdlF23jYqFH5G2vk9jo6elarOQiRkxxp4w/8KMuBykCkdV03tahArG7Ug0BCkTVoL/0qoi6QgtPBGZr/VfHuxM5RXM+gJgs3nRlAIAAA==

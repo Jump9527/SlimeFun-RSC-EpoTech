@@ -1,9 +1,9 @@
 item:
   ==: org.bukkit.inventory.ItemStack
-  v: 3465
+  v: 3955
   type: ZOMBIE_SPAWN_EGG
   meta:
     ==: ItemMeta
     meta-type: SPAWN_EGG
-    display-name: '[{"text":"僵尸之王","italic":false,"color":"red","bold":true}]'
-    internal: H4sIAAAAAAAA/22Sz2vUQBTHX5rdbhJcaUXRgwfJxYuIsLde7DatWpBS8MdFZJkkb5Nh58cy82JbS0HwJIJHL/UuevfiyaP/SN1/w0maXbfFgYGZN5/3fd95MxFABOGOIk5Hz1kRwArPYfWtlinHEKKhkdrsEkobAUDHzXPias6Z1CoflSgkkg/dRFeK3LkHIfSHGfE3uDMeY0ZNpudB/1mpD/aZIZ4JtJ4PwXZlGHGtAO6u+bCym9egD+FQTgUfczRu73vQG9ZmFNXKHefRBk2ZK2enp7OfX/+8+z778M2D9aSypOUek/iSW54K9EJYa/xvGz1NSqYytN32FheG85Ywtc+zyYvpU63Jme09FvqAq8LZWX2CTFAJsHcngOhfFXjw6jgmPKR4Iz57/2P26WN8L8600MYFjlA4ARdItcjjDTIVnryu+0lkeFoRNl3pBdBppPoFKjQ8u89qv13obDGLW7+bdp8TNy8QI9JVUSq09n/sjQVLxLLJKGeSFdiSyecl8tYlcqJ0NkndqoUfDgaDBXz9EmyniHkLbv5aUr09BxdyI4OWW6qfYJ6wuZRwbZ4g2aH7UXW7W+zRl5qDv7vOYSKmAgAA
+    display-name: '{"text":"僵尸之王","italic":false,"bold":true}'
+    internal: H4sIAAAAAAAA/42Sz4oTQRDGa5KYzYxrRFEU1tOAN90HWBd0dxHdiycRQSTUzFQmTaa7h+5KstlFWPAkC77AXryJnryIf57ABzHm6iPYk7VHDQQ89KXq11991FcRQAQRKRY8vc2YhxDtGKnNPpO0EQC0ADrQEBl0M4FSq6w3oEIS+3L7UMtEUACX9kaWtXyEkp4IK5KCghBajzG3HScTwPrs9HT+9e2P4/fzV++a0N63u5hMq1YAaw8KPREqD1z9IWHBA4Dzn5wXZDYiGTEtvITnoJWgpd1vfvqFnBQZkW5iZRp8/43vX/un32M9ygeKrPXkXq10tSaZMR32MpSYk+fuHnvuhueGSqfDpEINWWEZVVrj98Dj15dk618e3fnp0StLqC2JstpArbjhManHJF1yPer3RSpIpdN6fr2AjbN4Nm2JE+WcCtXXJl38q5dw/075m75ca+OBy3kRRAeiP8nCzWdHMdMBx1vx7OXH2YfP37+czF+fxLfiRBdZvMVmRC+eh9DFlMWYKm+U8iK9ZgBdO9CTXomGRVqQDc6mRphYbUoWWrlTwMqvYncKnWxksKoCNJ42IURZFqIvyDixNqxSWxdqXN2fKNxJr9KD7SW9xkq9i31h6K+M/9vimnu/AP0toWlfAwAA

@@ -85,7 +85,7 @@ JP_ZNCJ:
           amount: 1       
       output:
         1:
-          chance: 50
+          chance: 80
           material_type: slimefun
           material: JP_KJ_HX
           amount: 1    
@@ -102,7 +102,7 @@ JP_ZNCJ:
           amount: 1       
       output:
         1:
-          chance: 50
+          chance: 80
           material_type: slimefun
           material: JP_WGKJ
           amount: 1        

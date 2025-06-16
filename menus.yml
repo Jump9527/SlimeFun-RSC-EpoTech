@@ -1,6 +1,17 @@
-JP_CS:
+JP_测试机器:
   title: '&a&测试'
-  script: "测试菜单"
+  script: "测试脚本/测试菜单"
+  slots:
+    49:
+      material_type: skull_hash
+      material: 26314d31b095e4d421760497be6a156f459d8c9957b7e6b1c12deb4e47860d71
+      name: '&7点击输入答案(发电量为上面物品lore相乘)'
+      lore:
+      - '&7点击输入' 
+
+JP_测试闲置机器:
+  title: '&a&测试'
+  script: 
   slots:
     0-9:
       material: black_stained_glass_pane
@@ -30,7 +41,7 @@ JP_CS:
       material: 26314d31b095e4d421760497be6a156f459d8c9957b7e6b1c12deb4e47860d71
       name: '&7点击合成'
       lore:
-      - '&7点击合成' 
+      - '&7点击合成'       
                
 
 
@@ -332,6 +343,18 @@ FLFDJ_PLUS++:
       name: '&a'          
 
 ###鼓舞室系列
+
+JP_GWS1_FEATHER:
+  title: '鼓舞室Plus_羽毛'
+  slots:
+    0:
+      name: '&f提示'
+      material_type: mc
+      material: BIRCH_SIGN
+      modelId: 88788
+      glow: true
+      lore:
+      - '&7除了我以外都是输出槽'
 
 JP_GWS1_SAND:
   title: '鼓舞室Plus_沙子'
@@ -1185,7 +1208,19 @@ JP_FC_FW:
       modelId: 88788
       glow: true
       lore:
-      - '&7除了我以外都是输出槽'   
+      - '&7除了我以外都是输出槽'
+
+JP_鼓舞室_掉落物版:
+  title: '§l§a鼓舞室Plus_§l&#ea1a1a掉落物鸡'
+  slots:
+    0:
+      name: '&f提示'
+      material_type: mc
+      material: BIRCH_SIGN
+      modelId: 88788
+      glow: true
+      lore:
+      - '&7除了我以外都是输出槽'
 
 JP_FC_SOLDER_INGOT:
   title: '§l§a蜂巢Plus_§l§b焊锡锭'
@@ -1389,30 +1424,6 @@ JP_FC_REDSTONE_ALLOY:
       modelId: 88788
       glow: true
       lore:
-      - '&7除了我以外都是输出槽' 
-
-JP_FC_SYNTHETIC_DIAMOND:
-  title: '§l§a蜂巢Plus_人造钻石'
-  slots:
-    0:
-      name: '&f提示'
-      material_type: mc
-      material: BIRCH_SIGN
-      modelId: 88788
-      glow: true
-      lore:
-      - '&7除了我以外都是输出槽'       
-
-JP_FC_SYNTHETIC_EMERALD:
-  title: '§l§a蜂巢Plus_人造绿宝石'
-  slots:
-    0:
-      name: '&f提示'
-      material_type: mc
-      material: BIRCH_SIGN
-      modelId: 88788
-      glow: true
-      lore:
       - '&7除了我以外都是输出槽'     
 
 JP_FC_SYNTHETIC_EMERALD:
@@ -1496,4 +1507,133 @@ JP_SGRZ:
       name: '&a'
     49:
       material: gray_stained_glass_pane
-      name: '&a'          
+      name: '&a'  
+
+JP_钨钢开采机:
+  title: '§l§a钨钢§l§b开采机'
+  slots:
+    0:
+      name: '&f提示'
+      material_type: mc
+      material: BIRCH_SIGN
+      modelId: 88788
+      glow: true
+      lore:
+      - '&7除了我以外都是输出槽'             
+
+JP_Mob_Converter:
+  title: "&#42b9fb&l生&#6aa8fc&l物&#9297fc&l转&#ba86fd&l换&#e275fd&l机"
+  script: "机器脚本/生物转换机"
+  slots:
+    0-12:
+      amount: 1
+      material_type: mc
+      material: BLACK_STAINED_GLASS_PANE
+    13:
+      lore: [§f§r选择你需要的生物点击即可]
+      name: '      §6§l点击即可'
+      amount: 1
+      material_type: mc
+      material: REDSTONE_TORCH
+    14-18:
+      amount: 1
+      material_type: mc
+      material: BLACK_STAINED_GLASS_PANE
+    19:
+      name: "牛"
+      amount: 1
+      material_type: skull_hash
+      material: be8456155142cbe4e61353ffbaff304d3d9c4bc9247fc27b92e33e6e26067edd
+    20:
+      name: "羊"
+      amount: 1
+      material_type: skull_hash
+      material: 292df216ecd27624ac771bacfbfe006e1ed84a79e9270be0f88e9c8791d1ece4
+    21:
+      name: "猪"
+      amount: 1
+      material_type: skull_hash
+      material: 621668ef7cb79dd9c22ce3d1f3f4cb6e2559893b6df4a469514e667c16aa4
+    22:
+      name: "鸡"
+      amount: 1
+      material_type: skull_hash
+      material: ca3582ce4889333dad329e4e24372a03a5daa2c34280c56256af5283edb043f8  
+    23:
+      name: "马"
+      amount: 1
+      material_type: skull_hash
+      material: 245c259eb213521fe613560ddae74e9e62aada756ae4c65aa72cf92683a06280
+    24:
+      name: "驴"
+      amount: 1
+      material_type: skull_hash
+      material: 3b25266d40cecd93d053156e4a4a784140d034255c721cc375d1c3648342b6fd 
+    25:
+      name: "兔子"
+      amount: 1
+      material_type: skull_hash
+      material: b4dcfed6897a18a7ab995a66134d41a1ca821b69bcb7d14cf269b4a98df49a8             
+    26-27:
+      amount: 1
+      material_type: mc
+      material: BLACK_STAINED_GLASS_PANE
+    28:
+      name: "猫"
+      amount: 1
+      material_type: skull_hash
+      material: 53aceac5b24739ab6d890c962ef3569492510b5c248659c5a95c3a43645b1707
+    29:
+      name: "狼"
+      amount: 1
+      material_type: skull_hash
+      material: 1832d53997b451635c9cf9004b0f22bb3d99ab5a093942b5b5f6bb4e4de47065
+    30:
+      name: "熊猫"
+      amount: 1
+      material_type: skull_hash
+      material: 223b237a0f27d505fcd931b6e9c2933a746787cc108414f4f82370795be0fb9
+    31:
+      name: "鹦鹉"
+      amount: 1
+      material_type: skull_hash
+      material: 4d482a65d004bceb7141349636911630dffba68ff21b8d51d9177850f944c6ff
+    32:
+      name: "熊"
+      amount: 1
+      material_type: skull_hash
+      material: 442123ac15effa1ba46462472871b88f1b09c1db467621376e2f71656d3fbc
+    33:
+      name: "狐狸"
+      amount: 1
+      material_type: skull_hash
+      material: 89a3a9e946b1dcf852710cef63635ca2cb06eb8a5aadd1beb6f9905474961788
+    34:
+      name: "蜜蜂"
+      amount: 1
+      material_type: skull_hash
+      material: 1874787e36159e4d74db5e25baba987b665dcc890be9f262bb0cbcf5d01b82b6                      
+    35-39:
+      amount: 1
+      material_type: mc
+      material: BLACK_STAINED_GLASS_PANE
+    40:
+      name: §6§l转换一只需要1000j电力
+      amount: 1
+      material_type: mc
+      material: REDSTONE_TORCH
+    41-53:
+      amount: 1
+      material_type: mc
+      material: BLACK_STAINED_GLASS_PANE
+
+JP_Multiplication_Generator:
+  title: '&b&l乘法发电机'
+  script: "机器脚本/乘法发电机"
+  slots:
+    49:
+      material_type: skull_hash
+      material: 785c19bea1e0aa1b3f8f9853c754b53467718ce0f90de886fd4ef2b4209955c5
+      name: '&7点击输入答案(发电量为上面物品lore相乘)'
+      lore:
+      - '&7点击输入' 

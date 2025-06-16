@@ -19,12 +19,13 @@ JP_CSWQ:
   item_group: jp_zwf_44
   item:
     name: "测试武器"
-    lore:
+    lore: 
+    - "剩余伤害: 10"
     material: DIAMOND_SWORD
     amount: 1
   placeable: false
   recipe_type: 'JP_GOD_CRAFTING_TABLE'
-  script: 
+  script: "测试脚本/测试武器"
   recipe:
        2:
           material_type: slimefun
@@ -32,7 +33,6 @@ JP_CSWQ:
 
 JP_道具:
   lateInit: false
-  energy_capacity: 10000
   item_group: jp_zwf_44
   item:
     name: "测试道具"
@@ -46,7 +46,7 @@ JP_道具:
     amount: 1
   placeable: false
   recipe_type: 'JP_GOD_CRAFTING_TABLE'
-  script: 测试道具 
+  script: "测试道具123" 
   recipe:
        2:
           material_type: slimefun
@@ -74,6 +74,18 @@ JP_NULL:
     amount: 1
   placeable: false
   recipe_type: NULL 
+
+
+JP_击杀:
+  lateInit: false
+  item_group: jp_zwf_44
+  item:
+    name: '&c&l击杀该生物'
+    material: DIAMOND_SWORD
+    amount: 1
+  placeable: false
+  recipe_type: NULL   
+
 
 #菜单占位符
 
@@ -600,7 +612,7 @@ JP_WKS:
       material: DIAMOND_PICKAXE
       amount: 1  
   drop_from: OBSIDIAN
-  drop_chance: 1
+  drop_chance: 10
   drop_amount: 1  
 
 JP_WG:
@@ -1025,7 +1037,7 @@ JP_BEEBZQ:
     material: COBWEB
     amount: 1
   placeable: false
-  script: 蜜蜂捕捉器
+  script: 工具脚本/蜜蜂捕捉器
   recipe_type: ENHANCED_CRAFTING_TABLE
   recipe:
     1:
@@ -1153,6 +1165,78 @@ JP_WX:
   recipe_type: NULL  
 
 #怪物掉落物
+
+JP_成年礼:
+  lateInit: false
+  item_group: jp_cl
+  item:
+    name: '&#42b9fb&l成&#9297fc&l年&#e275fd&l礼'
+    lore:
+    - '&c&lbaby赠送的成年礼'
+    material_type: skull_hash
+    material: 21bc9d42b0041e8f95cb9b26628fdaf50cd0e36f7bb9d6b3a4d2af3949da97d6
+    amount: 1
+  placeable: false
+  recipe_type: NULL
+
+JP_科比残骸:
+  lateInit: false
+  item_group: jp_cl
+  item:
+    name: '&#42b9fb&l科&#77a2fc&l比&#ad8cfc&l残&#e275fd&l骸'
+    lore:
+    - '&c&l被击落机打下时获得'
+    - '&#42b9fb&lM&#54b1fb&la&#66aafb&lm&#77a2fc&lb&#899bfc&la&#9b93fc&l &#ad8cfc&lO&#be84fd&lu&#d07dfd&lt&#e275fd&l!'
+    material_type: skull_hash
+    material: bd3d1a1404fc4c95f7f947b99579821300bac92e8e231bee547503ddeb635adc
+    amount: 1
+  placeable: false
+  recipe_type: NULL
+
+JP_岩浆怪精华:
+  lateInit: false
+  item_group: jp_cl
+  item:
+    name: '&#42b9fb&l岩&#6aa8fc&l浆&#9297fc&l怪&#ba86fd&l精&#e275fd&l华'
+    lore:
+    - '&c&l击杀大于64size岩浆怪掉落'
+    material_type: skull_hash
+    material: a1c97a06efde04d00287bf20416404ab2103e10f08623087e1b0c1264a1c0f0c
+    amount: 1
+  placeable: false
+  recipe_type: NULL
+  recipe:
+    2:
+      material_type: mc
+      material: DIAMOND_SWORD
+      amount: 1 
+    5:
+      material_type: mc
+      material: Magma_Cube_SPAWN_EGG
+      amount: 1 
+
+JP_史莱姆精华:
+  lateInit: false
+  item_group: jp_cl
+  item:
+    name: '&#42b9fb&l史&#6aa8fc&l莱&#9297fc&l姆&#ba86fd&l精&#e275fd&l华'
+    lore:
+    - '&c&l击杀大于64size史莱姆掉落'
+    material_type: skull_hash
+    material: 86c27b013f1bf3344869e81e5c610027bc45ec5b79514fdc96e01df1b7e3a387
+    amount: 1
+  placeable: false
+  recipe_type: NULL
+  recipe:
+    2:
+      material_type: mc
+      material: DIAMOND_SWORD
+      amount: 1 
+    5:
+      material_type: mc
+      material: SLIME_SPAWN_EGG
+      amount: 1 
+
 JP_JH_1:
   lateInit: false
   item_group: jp_cl
@@ -1639,15 +1723,13 @@ JP_FENKA:
     material: PAPER
     amount: 1
   placeable: false
-  script: 粉卡
+  script: 道具脚本/粉卡
   recipe_type: JP_KJJQ
   recipe:
-    2:
+    1:
       material_type: mc
       material: COBBLESTONE
-    5:
-      material_type: slimefun
-      material: JP_KJJQ
+      amount: 64
 
 JP_DLKLJ:
   lateInit: false
@@ -1663,15 +1745,12 @@ JP_DLKLJ:
     material: IRON_SWORD
     amount: 1
   placeable: false
-  script: 凋零骷髅剑
-  recipe_type: JP_KJJQ
+  script: 武器脚本/凋零骷髅剑
+  recipe_type: JP_GJZZT
   recipe:
     2:
       material_type: slimefun
-      material: SWORD_OF_BEHEADING
-    5:
-      material_type: slimefun
-      material: JP_KJJQ     
+      material: SWORD_OF_BEHEADING   
 
 JP_JYSNQ250:
   lateInit: false
@@ -1686,7 +1765,7 @@ JP_JYSNQ250:
     material: EXPERIENCE_BOTTLE
     amount: 1
   placeable: false
-  script: 经验势能器250级版
+  script: 道具脚本/经验势能器250级版
   recipe_type: 'JP_GOD_CRAFTING_TABLE'
   recipe:
     1:
@@ -1740,7 +1819,7 @@ JP_XXDF:
     amount: 1
     glow: true
   placeable: false
-  script: 功法-吸星大法
+  script: 道具脚本/功法-吸星大法
   recipe_type: JP_GOD_CRAFTING_TABLE
   recipe:
     2:
@@ -1767,7 +1846,7 @@ JP_LANQIU:
     amount: 1
     glow: true
   placeable: false
-  script: 篮球
+  script: 道具脚本/篮球
   recipe_type: 'JP_GOD_CRAFTING_TABLE'
   recipe:
     1:
@@ -1812,7 +1891,7 @@ JP_FWQ:
     amount: 1
   placeable: false
   recipe_type: 'JP_KJJQ'
-  script: 服务器
+  script: 道具脚本/服务器
   recipe:
     1:
       material_type: mc
@@ -1855,6 +1934,7 @@ JP_HKS_PICKAXE:
     amount: 1
   placeable: false
   recipe_type: JP_GOD_CRAFTING_TABLE
+  script: 工具脚本/海克斯镐
   recipe:
     2:
       material_type: slimefun
@@ -1914,7 +1994,8 @@ JP_HKS_DIAMOND_SWORD:
   recipe:
     2:
       material_type: slimefun
-      material: SOULBOUND_SWORD          
+      material: SOULBOUND_SWORD
+  script: 武器脚本/海克斯剑               
 
 JP_YXJ:
   lateInit: false
@@ -1930,7 +2011,7 @@ JP_YXJ:
     amount: 1
   placeable: false
   recipe_type: 'JP_GOD_CRAFTING_TABLE'
-  script: 饮血剑
+  script: 武器脚本/饮血剑
   recipe:
     1:
       material_type: slimefun
@@ -1975,7 +2056,7 @@ JP_JHZR:
     amount: 1
   placeable: false
   recipe_type: JP_GOD_CRAFTING_TABLE
-  script: 净魂之刃
+  script: 武器脚本/净魂之刃
   recipe:
     1:
       material_type: slimefun
@@ -2019,7 +2100,7 @@ JP_QHFMS:
     amount: 1
     glow: true
   placeable: false
-  script: 强化附魔书
+  script: 道具脚本/强化附魔书
   recipe_type: JP_GOD_CRAFTING_TABLE
   recipe:
     5:
@@ -2040,7 +2121,7 @@ JP_倍数版:
     amount: 1
     glow: true
   placeable: false
-  script: 强化附魔书倍数版本
+  script: 道具脚本/强化附魔书倍数版本
   recipe_type: NULL
         
 
@@ -2058,7 +2139,7 @@ JP_SHZFS:
     amount: 1
     glow: true
   placeable: false
-  script: 伤害增幅书
+  script: 道具脚本/伤害增幅书
   recipe_type: JP_GOD_CRAFTING_TABLE
   recipe:
     5:
@@ -2080,7 +2161,7 @@ JP_HJZFS:
     amount: 1
     glow: true
   placeable: false
-  script: 护甲增幅书
+  script: 道具脚本/护甲增幅书
   recipe_type: JP_GOD_CRAFTING_TABLE
   recipe:
     5:
@@ -2102,7 +2183,7 @@ JP_KJRXZFS:
     amount: 1
     glow: true
   placeable: false
-  script: 盔甲韧性增幅书
+  script: 道具脚本/盔甲韧性增幅书
   recipe_type: JP_GOD_CRAFTING_TABLE
   recipe:
     5:
@@ -2124,7 +2205,7 @@ JP_SMZFS:
     amount: 1
     glow: true
   placeable: false
-  script: 生命增幅书
+  script: 道具脚本/生命增幅书
   recipe_type: JP_GOD_CRAFTING_TABLE
   recipe:
     5:
@@ -2145,8 +2226,8 @@ JP_PLAYPLAN:
     amount: 1
     glow: true
   placeable: false
-  script: 斐济北
-  recipe_type: JP_KJJQ
+  script: 道具脚本/斐济北
+  recipe_type: JP_GJZZT
   recipe:
     1:
       material_type: slimefun
@@ -2187,7 +2268,7 @@ JP_ZBYG:
     material: TRIPWIRE_HOOK
     amount: 1
   placeable: false
-  script: 自爆幽鬼
+  script: 武器脚本/自爆幽鬼
   recipe_type: JP_GOD_CRAFTING_TABLE
   recipe:
     1:
@@ -2232,12 +2313,13 @@ JP_WJZFK:
     amount: 1
     glow: true
   placeable: false
-  script: 无尽增幅卡
+  script: 道具脚本/无尽增幅卡
   recipe_type: JP_GOD_CRAFTING_TABLE
   recipe:
-    5:
+    1:
       material_type: slimefun
       material: INFINITE_INGOT
+      amount: 64
 
 JP_村民棒:
   lateInit: false
@@ -2252,8 +2334,8 @@ JP_村民棒:
     material: LIGHTNING_ROD
     amount: 1
   placeable: false
-  recipe_type: JP_KJJQ
-  script: 村民棒 
+  recipe_type: JP_GJZZT
+  script: 道具脚本/村民棒 
   recipe:
        1:
           material_type: mc
@@ -2299,7 +2381,7 @@ JP_黑棋:
     amount: 1
   placeable: false
   recipe_type: ENHANCED_CRAFTING_TABLE
-  script: 黑棋 
+  script: 道具脚本/黑棋 
   recipe:
        1:
           material_type: mc
@@ -2320,8 +2402,220 @@ JP_白棋:
     amount: 1
   placeable: false
   recipe_type: ENHANCED_CRAFTING_TABLE
-  script: 白棋 
+  script: 道具脚本/白棋 
   recipe:
        1:
           material_type: mc
-          material: ACACIA_BUTTON                                      
+          material: ACACIA_BUTTON    
+
+JP_手电钻:
+  lateInit: false
+  item_group: jp_prop
+  item:
+    name: '&#ab4061&l手电钻'
+    lore:
+      - '&e╔════════════════════════════════════╗'
+      - '&e║&#c22afb右键即可开始开采原油' 
+      - '&e║&#c22afb开采深度:  米' 
+      - '&e╚════════════════════════════════════╝'
+    material: HOPPER
+    amount: 1
+  placeable: false
+  script: 工具脚本/手电钻
+  recipe_type: JP_GJZZT
+  recipe:
+       2:
+          material_type: slimefun
+          material: GPS_GEO_SCANNER 
+          amount: 1 
+       4:
+          material_type: mc
+          material: PISTON 
+          amount: 1
+       5:
+          material_type: slimefun
+          material: OIL_PUMP 
+          amount: 1    
+       6:
+          material_type: mc
+          material: PISTON 
+          amount: 1         
+       7:
+          material_type: mc
+          material: HOPPER
+          amount: 1  
+       8:
+          material_type: mc
+          material: HOPPER 
+          amount: 1         
+       9:
+          material_type: mc
+          material: HOPPER 
+          amount: 1  
+
+JP_手电钻+1:
+  lateInit: false
+  item_group: jp_prop
+  item:
+    name: '&#ab4061&l手电钻+1'
+    lore:
+      - '&e╔════════════════════════════════════╗'
+      - '&e║&#c22afb右键即可开始开采原油' 
+      - '&e║&#c22afb开采深度:  米' 
+      - '&e╚════════════════════════════════════╝'
+    material: HOPPER
+    amount: 1
+  placeable: false
+  script: 工具脚本/手电钻
+  recipe_type: ENHANCED_CRAFTING_TABLE
+  recipe:
+       1:
+          material_type: slimefun
+          material: JP_JH_1
+          amount: 1
+       2:
+          material_type: slimefun
+          material: JP_JH_1
+          amount: 1     
+       3:
+          material_type: slimefun
+          material: JP_JH_1
+          amount: 1  
+       4:
+          material_type: slimefun
+          material: JP_JH_1
+          amount: 1
+       5:
+          material_type: slimefun
+          material: JP_手电钻
+          amount: 1     
+       6:
+          material_type: slimefun
+          material: JP_JH_1
+          amount: 1
+       7:
+          material_type: slimefun
+          material: JP_JH_1
+          amount: 1
+       8:
+          material_type: slimefun
+          material: JP_JH_1
+          amount: 1     
+       9:
+          material_type: slimefun
+          material: JP_JH_1
+          amount: 1             
+
+JP_手电钻+2:
+  lateInit: false
+  item_group: jp_prop
+  item:
+    name: '&#ab4061&l手电钻+2'
+    lore:
+      - '&e╔════════════════════════════════════╗'
+      - '&e║&#c22afb右键即可开始开采原油' 
+      - '&e║&#c22afb开采深度:  米' 
+      - '&e╚════════════════════════════════════╝'
+    material: HOPPER
+    amount: 1
+  placeable: false
+  script: 工具脚本/手电钻
+  recipe_type: ENHANCED_CRAFTING_TABLE
+  recipe:
+       2:
+          material_type: slimefun
+          material: JP_JH_2
+          amount: 1       
+       5:
+          material_type: slimefun
+          material: JP_手电钻+1
+          amount: 1 
+
+JP_手电钻+3:
+  lateInit: false
+  item_group: jp_prop
+  item:
+    name: '&#ab4061&l手电钻+3'
+    lore:
+      - '&e╔════════════════════════════════════╗'
+      - '&e║&#c22afb右键即可开始开采原油' 
+      - '&e║&#c22afb开采深度:  米' 
+      - '&e╚════════════════════════════════════╝'
+    material: HOPPER
+    amount: 1
+  placeable: false
+  script: 工具脚本/手电钻
+  recipe_type: ENHANCED_CRAFTING_TABLE
+  recipe:
+       2:
+          material_type: slimefun
+          material: JP_JH_3
+          amount: 1       
+       5:
+          material_type: slimefun
+          material: JP_手电钻+2
+          amount: 1 
+
+JP_空岛镐:
+  lateInit: false
+  item_group: jp_prop
+  item:
+    name: "§#21CEE7§l空岛镐"
+    lore:
+      - '§4§lShift + 右键切换模式 : §2§l 钻石'
+      - '&#c22afb存储数量: §2§l0'
+    material: DIAMOND_PICKAXE
+    amount: 1
+  placeable: false
+  recipe_type: JP_GJZZT
+  script: 工具脚本/空岛镐
+  recipe:
+    1:
+        material_type: mc
+        material: DIAMOND_PICKAXE
+        amount: 1       
+    2:
+        material_type: mc
+        material: DIAMOND_PICKAXE
+        amount: 1
+    3:
+        material_type: mc
+        material: DIAMOND_PICKAXE
+        amount: 1       
+    4:
+        material_type: mc
+        material: DIAMOND_PICKAXE
+        amount: 1
+    5:
+        material_type: mc
+        material: DIAMOND_PICKAXE
+        amount: 1       
+    6:
+        material_type: mc
+        material: DIAMOND_PICKAXE
+        amount: 1
+    7:
+        material_type: mc
+        material: DIAMOND_PICKAXE
+        amount: 1       
+    8:
+        material_type: mc
+        material: DIAMOND_PICKAXE
+        amount: 1  
+    9:
+        material_type: mc
+        material: DIAMOND_PICKAXE
+        amount: 1        
+
+JP_复制权杖:
+  lateInit: false
+  item_group: jp_prop
+  item:
+    name: "&#e1196c&l复&#b4136d&l制&#870d6d&l权&#5a076e&l杖"
+    lore:
+      - '&#42b9fb&l右&#54b1fb&l键&#66aafb&l复&#77a2fc&l制&#899bfc&l掉&#9b93fc&l落&#ad8cfc&l物&#be84fd&l及&#d07dfd&l生&#e275fd&l物'
+    material: DIAMOND_PICKAXE
+    amount: 1
+  placeable: false
+  recipe_type: JP_GOD_CRAFTING_TABLE
+  script: 道具脚本/复制权杖

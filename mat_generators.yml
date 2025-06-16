@@ -1,5 +1,66 @@
 ###鸡因工程系列
 
+JP_GWS1_FEATHER:
+  lateInit: true
+  item_group: jp_gws
+  item:
+    name: '§l§a鼓舞室Plus_羽毛'
+    lore:
+    - '&4一个更比八个强'
+    - '&8⇨ &e⚡&7 4000 J 可存储'
+    - '&8⇨ &e⚡&7 1000 J/s'
+    material_type: skull_hash
+    material: a2a0f3696fd8a9f08363d4321f9b4de3cf18a329ac96190baa9bf7ac6bd2122b
+    amount: 1
+  capacity: 4000
+  per: 500
+  recipe_type: ENHANCED_CRAFTING_TABLE
+  recipe:
+    1:
+      material_type: slimefun
+      material: GCE_EXCITATION_CHAMBER_3
+      amount: 1
+    2:
+      material_type: mc
+      material: feather
+      amount: 1
+    3:
+      material_type: slimefun
+      material: GCE_EXCITATION_CHAMBER_3
+      amount: 1
+    4:
+      material_type: slimefun
+      material: GCE_EXCITATION_CHAMBER_3
+      amount: 1
+    5:
+      material_type: slimefun
+      material: JP_JXHX
+      amount: 1
+    6:
+      material_type: slimefun
+      material: GCE_EXCITATION_CHAMBER_3
+      amount: 1
+    7:
+      material_type: slimefun
+      material: GCE_EXCITATION_CHAMBER_3
+      amount: 1
+    8:
+      material_type: slimefun
+      material: JP_JH_1
+      amount: 1
+    9:
+      material_type: slimefun
+      material: GCE_EXCITATION_CHAMBER_3
+      amount: 1
+  status: 53
+  tickRate: 16
+  outputItem:
+    material_type: mc
+    material: feather
+    amount: 64
+  output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52]  
+
+
 JP_GWS1_SAND:
   lateInit: true
   item_group: jp_gws
@@ -18,7 +79,7 @@ JP_GWS1_SAND:
   recipe:
     1:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     2:
       material_type: mc
@@ -26,11 +87,11 @@ JP_GWS1_SAND:
       amount: 1
     3:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     4:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     5:
       material_type: slimefun
@@ -38,11 +99,11 @@ JP_GWS1_SAND:
       amount: 1
     6:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     7:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     8:
       material_type: slimefun
@@ -50,7 +111,7 @@ JP_GWS1_SAND:
       amount: 1
     9:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
   status: 53
   tickRate: 16
@@ -79,7 +140,7 @@ JP_GWS1_SLIME_BALL:
   recipe:
     1:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     2:
       material_type: mc
@@ -87,11 +148,11 @@ JP_GWS1_SLIME_BALL:
       amount: 1
     3:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     4:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     5:
       material_type: slimefun
@@ -99,11 +160,11 @@ JP_GWS1_SLIME_BALL:
       amount: 1
     6:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     7:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     8:
       material_type: slimefun
@@ -111,7 +172,7 @@ JP_GWS1_SLIME_BALL:
       amount: 1
     9:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
   status: 53
   tickRate: 16
@@ -140,7 +201,7 @@ JP_GWS1_FLINT:
   recipe:
     1:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     2:
       material_type: mc
@@ -148,11 +209,11 @@ JP_GWS1_FLINT:
       amount: 1
     3:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     4:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     5:
       material_type: slimefun
@@ -160,11 +221,11 @@ JP_GWS1_FLINT:
       amount: 1
     6:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     7:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     8:
       material_type: slimefun
@@ -172,7 +233,7 @@ JP_GWS1_FLINT:
       amount: 1
     9:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
   status: 53
   tickRate: 16
@@ -201,7 +262,7 @@ JP_GWS1_KELP:
   recipe:
     1:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     2:
       material_type: mc
@@ -209,11 +270,11 @@ JP_GWS1_KELP:
       amount: 1
     3:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     4:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     5:
       material_type: slimefun
@@ -221,11 +282,11 @@ JP_GWS1_KELP:
       amount: 1
     6:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     7:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     8:
       material_type: slimefun
@@ -233,7 +294,7 @@ JP_GWS1_KELP:
       amount: 1
     9:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
   status: 53
   tickRate: 16
@@ -262,7 +323,7 @@ JP_GWS1_GUNPOWDER:
   recipe:
     1:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     2:
       material_type: mc
@@ -270,11 +331,11 @@ JP_GWS1_GUNPOWDER:
       amount: 1
     3:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     4:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     5:
       material_type: slimefun
@@ -282,11 +343,11 @@ JP_GWS1_GUNPOWDER:
       amount: 1
     6:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     7:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     8:
       material_type: slimefun
@@ -294,7 +355,7 @@ JP_GWS1_GUNPOWDER:
       amount: 1
     9:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
   status: 53
   tickRate: 16
@@ -323,7 +384,7 @@ JP_GWS1_OAK_LOG:
   recipe:
     1:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     2:
       material_type: mc
@@ -331,11 +392,11 @@ JP_GWS1_OAK_LOG:
       amount: 1
     3:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     4:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     5:
       material_type: slimefun
@@ -343,11 +404,11 @@ JP_GWS1_OAK_LOG:
       amount: 1
     6:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     7:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     8:
       material_type: slimefun
@@ -355,7 +416,7 @@ JP_GWS1_OAK_LOG:
       amount: 1
     9:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
   status: 53
   tickRate: 16
@@ -384,7 +445,7 @@ JP_GWS1_CLAY:
   recipe:
     1:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     2:
       material_type: mc
@@ -392,11 +453,11 @@ JP_GWS1_CLAY:
       amount: 1
     3:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     4:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     5:
       material_type: slimefun
@@ -404,11 +465,11 @@ JP_GWS1_CLAY:
       amount: 1
     6:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     7:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     8:
       material_type: slimefun
@@ -416,7 +477,7 @@ JP_GWS1_CLAY:
       amount: 1
     9:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
   status: 53
   tickRate: 16
@@ -445,7 +506,7 @@ JP_GWS1_GRANITE:
   recipe:
     1:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     2:
       material_type: mc
@@ -453,11 +514,11 @@ JP_GWS1_GRANITE:
       amount: 1
     3:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     4:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     5:
       material_type: slimefun
@@ -465,11 +526,11 @@ JP_GWS1_GRANITE:
       amount: 1
     6:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     7:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     8:
       material_type: slimefun
@@ -477,7 +538,7 @@ JP_GWS1_GRANITE:
       amount: 1
     9:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
   status: 53
   tickRate: 16
@@ -506,7 +567,7 @@ JP_GWS1_CACTUS:
   recipe:
     1:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     2:
       material_type: mc
@@ -514,11 +575,11 @@ JP_GWS1_CACTUS:
       amount: 1
     3:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     4:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     5:
       material_type: slimefun
@@ -526,11 +587,11 @@ JP_GWS1_CACTUS:
       amount: 1
     6:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     7:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     8:
       material_type: slimefun
@@ -538,7 +599,7 @@ JP_GWS1_CACTUS:
       amount: 1
     9:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
   status: 53
   tickRate: 16
@@ -567,7 +628,7 @@ JP_GWS1_REDSTONE:
   recipe:
     1:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     2:
       material_type: mc
@@ -575,11 +636,11 @@ JP_GWS1_REDSTONE:
       amount: 1
     3:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     4:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     5:
       material_type: slimefun
@@ -587,11 +648,11 @@ JP_GWS1_REDSTONE:
       amount: 1
     6:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     7:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     8:
       material_type: slimefun
@@ -599,7 +660,7 @@ JP_GWS1_REDSTONE:
       amount: 1
     9:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
   status: 53
   tickRate: 16
@@ -628,7 +689,7 @@ JP_GWS1_ICE:
   recipe:
     1:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     2:
       material_type: mc
@@ -636,11 +697,11 @@ JP_GWS1_ICE:
       amount: 1
     3:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     4:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     5:
       material_type: slimefun
@@ -648,11 +709,11 @@ JP_GWS1_ICE:
       amount: 1
     6:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     7:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     8:
       material_type: slimefun
@@ -660,7 +721,7 @@ JP_GWS1_ICE:
       amount: 1
     9:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
   status: 53
   tickRate: 16
@@ -689,7 +750,7 @@ JP_GWS1_GRAVEL:
   recipe:
     1:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     2:
       material_type: mc
@@ -697,11 +758,11 @@ JP_GWS1_GRAVEL:
       amount: 1
     3:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     4:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     5:
       material_type: slimefun
@@ -709,11 +770,11 @@ JP_GWS1_GRAVEL:
       amount: 1
     6:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     7:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     8:
       material_type: slimefun
@@ -721,7 +782,7 @@ JP_GWS1_GRAVEL:
       amount: 1
     9:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
   status: 53
   tickRate: 16
@@ -750,7 +811,7 @@ JP_GWS1_SNOWBALL:
   recipe:
     1:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     2:
       material_type: mc
@@ -758,11 +819,11 @@ JP_GWS1_SNOWBALL:
       amount: 1
     3:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     4:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     5:
       material_type: slimefun
@@ -770,11 +831,11 @@ JP_GWS1_SNOWBALL:
       amount: 1
     6:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     7:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     8:
       material_type: slimefun
@@ -782,7 +843,7 @@ JP_GWS1_SNOWBALL:
       amount: 1
     9:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
   status: 53
   tickRate: 16
@@ -811,7 +872,7 @@ JP_GWS1_ANDESITE:
   recipe:
     1:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     2:
       material_type: mc
@@ -819,11 +880,11 @@ JP_GWS1_ANDESITE:
       amount: 1
     3:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     4:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     5:
       material_type: slimefun
@@ -831,11 +892,11 @@ JP_GWS1_ANDESITE:
       amount: 1
     6:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     7:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     8:
       material_type: slimefun
@@ -843,7 +904,7 @@ JP_GWS1_ANDESITE:
       amount: 1
     9:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
   status: 53
   tickRate: 16
@@ -872,7 +933,7 @@ JP_GWS1_MAGMA_CREAM:
   recipe:
     1:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     2:
       material_type: mc
@@ -880,11 +941,11 @@ JP_GWS1_MAGMA_CREAM:
       amount: 1
     3:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     4:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     5:
       material_type: slimefun
@@ -892,11 +953,11 @@ JP_GWS1_MAGMA_CREAM:
       amount: 1
     6:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     7:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     8:
       material_type: slimefun
@@ -904,7 +965,7 @@ JP_GWS1_MAGMA_CREAM:
       amount: 1
     9:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
   status: 53
   tickRate: 16
@@ -933,7 +994,7 @@ JP_GWS1_DIORITE:
   recipe:
     1:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     2:
       material_type: mc
@@ -941,11 +1002,11 @@ JP_GWS1_DIORITE:
       amount: 1
     3:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     4:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     5:
       material_type: slimefun
@@ -953,11 +1014,11 @@ JP_GWS1_DIORITE:
       amount: 1
     6:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     7:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     8:
       material_type: slimefun
@@ -965,7 +1026,7 @@ JP_GWS1_DIORITE:
       amount: 1
     9:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
   status: 53
   tickRate: 16
@@ -994,7 +1055,7 @@ JP_GWS1_NETHER_WART:
   recipe:
     1:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     2:
       material_type: mc
@@ -1002,11 +1063,11 @@ JP_GWS1_NETHER_WART:
       amount: 1
     3:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     4:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     5:
       material_type: slimefun
@@ -1014,11 +1075,11 @@ JP_GWS1_NETHER_WART:
       amount: 1
     6:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     7:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     8:
       material_type: slimefun
@@ -1026,7 +1087,7 @@ JP_GWS1_NETHER_WART:
       amount: 1
     9:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
   status: 53
   tickRate: 16
@@ -1055,7 +1116,7 @@ JP_GWS1_OBSIDIAN:
   recipe:
     1:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     2:
       material_type: mc
@@ -1063,11 +1124,11 @@ JP_GWS1_OBSIDIAN:
       amount: 1
     3:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     4:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     5:
       material_type: slimefun
@@ -1075,11 +1136,11 @@ JP_GWS1_OBSIDIAN:
       amount: 1
     6:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     7:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     8:
       material_type: slimefun
@@ -1087,7 +1148,7 @@ JP_GWS1_OBSIDIAN:
       amount: 1
     9:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
   status: 53
   tickRate: 16
@@ -1116,7 +1177,7 @@ JP_GWS1_CRYING_OBSIDIAN:
   recipe:
     1:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     2:
       material_type: mc
@@ -1124,11 +1185,11 @@ JP_GWS1_CRYING_OBSIDIAN:
       amount: 1
     3:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     4:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     5:
       material_type: slimefun
@@ -1136,11 +1197,11 @@ JP_GWS1_CRYING_OBSIDIAN:
       amount: 1
     6:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     7:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     8:
       material_type: slimefun
@@ -1148,7 +1209,7 @@ JP_GWS1_CRYING_OBSIDIAN:
       amount: 1
     9:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
   status: 53
   tickRate: 16
@@ -1177,7 +1238,7 @@ JP_GWS1_SULFATE :
   recipe:
     1:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     2:
       material_type: slimefun
@@ -1185,11 +1246,11 @@ JP_GWS1_SULFATE :
       amount: 1
     3:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     4:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     5:
       material_type: slimefun
@@ -1197,11 +1258,11 @@ JP_GWS1_SULFATE :
       amount: 1
     6:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     7:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     8:
       material_type: slimefun
@@ -1209,7 +1270,7 @@ JP_GWS1_SULFATE :
       amount: 1
     9:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
   status: 53
   tickRate: 16
@@ -1238,7 +1299,7 @@ JP_GWS1_EMERALD:
   recipe:
     1:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     2:
       material_type: mc
@@ -1246,11 +1307,11 @@ JP_GWS1_EMERALD:
       amount: 1
     3:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     4:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     5:
       material_type: slimefun
@@ -1258,11 +1319,11 @@ JP_GWS1_EMERALD:
       amount: 1
     6:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     7:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     8:
       material_type: slimefun
@@ -1270,7 +1331,7 @@ JP_GWS1_EMERALD:
       amount: 1
     9:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
   status: 53
   tickRate: 16
@@ -1299,7 +1360,7 @@ JP_GWS1_BONE:
   recipe:
     1:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     2:
       material_type: mc
@@ -1307,11 +1368,11 @@ JP_GWS1_BONE:
       amount: 1
     3:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     4:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     5:
       material_type: slimefun
@@ -1319,11 +1380,11 @@ JP_GWS1_BONE:
       amount: 1
     6:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     7:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     8:
       material_type: slimefun
@@ -1331,7 +1392,7 @@ JP_GWS1_BONE:
       amount: 1
     9:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
   status: 53
   tickRate: 16
@@ -1360,7 +1421,7 @@ JP_GWS1_SPONGE:
   recipe:
     1:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     2:
       material_type: mc
@@ -1368,11 +1429,11 @@ JP_GWS1_SPONGE:
       amount: 1
     3:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     4:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     5:
       material_type: slimefun
@@ -1380,11 +1441,11 @@ JP_GWS1_SPONGE:
       amount: 1
     6:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     7:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     8:
       material_type: slimefun
@@ -1392,7 +1453,7 @@ JP_GWS1_SPONGE:
       amount: 1
     9:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
   status: 53
   tickRate: 16
@@ -1421,7 +1482,7 @@ JP_GWS1_LEATHER:
   recipe:
     1:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     2:
       material_type: mc
@@ -1429,11 +1490,11 @@ JP_GWS1_LEATHER:
       amount: 1
     3:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     4:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     5:
       material_type: slimefun
@@ -1441,11 +1502,11 @@ JP_GWS1_LEATHER:
       amount: 1
     6:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     7:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     8:
       material_type: slimefun
@@ -1453,7 +1514,7 @@ JP_GWS1_LEATHER:
       amount: 1
     9:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
   status: 53
   tickRate: 16
@@ -1482,7 +1543,7 @@ JP_GWS1_PHANTOM_MEMBRANE:
   recipe:
     1:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     2:
       material_type: mc
@@ -1490,11 +1551,11 @@ JP_GWS1_PHANTOM_MEMBRANE:
       amount: 1
     3:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     4:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     5:
       material_type: slimefun
@@ -1502,11 +1563,11 @@ JP_GWS1_PHANTOM_MEMBRANE:
       amount: 1
     6:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     7:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     8:
       material_type: slimefun
@@ -1514,7 +1575,7 @@ JP_GWS1_PHANTOM_MEMBRANE:
       amount: 1
     9:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
   status: 53
   tickRate: 16
@@ -1543,7 +1604,7 @@ JP_GWS1_STRING:
   recipe:
     1:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     2:
       material_type: mc
@@ -1551,11 +1612,11 @@ JP_GWS1_STRING:
       amount: 1
     3:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     4:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     5:
       material_type: slimefun
@@ -1563,11 +1624,11 @@ JP_GWS1_STRING:
       amount: 1
     6:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     7:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     8:
       material_type: slimefun
@@ -1575,7 +1636,7 @@ JP_GWS1_STRING:
       amount: 1
     9:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
   status: 53
   tickRate: 16
@@ -1604,7 +1665,7 @@ JP_GWS1_ENDER_PEARL:
   recipe:
     1:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     2:
       material_type: mc
@@ -1612,11 +1673,11 @@ JP_GWS1_ENDER_PEARL:
       amount: 1
     3:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     4:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     5:
       material_type: slimefun
@@ -1624,11 +1685,11 @@ JP_GWS1_ENDER_PEARL:
       amount: 1
     6:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     7:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     8:
       material_type: slimefun
@@ -1636,7 +1697,7 @@ JP_GWS1_ENDER_PEARL:
       amount: 1
     9:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
   status: 53
   tickRate: 16
@@ -1665,7 +1726,7 @@ JP_GWS1_IRON_INGOT:
   recipe:
     1:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     2:
       material_type: mc
@@ -1673,11 +1734,11 @@ JP_GWS1_IRON_INGOT:
       amount: 1
     3:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     4:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     5:
       material_type: slimefun
@@ -1685,11 +1746,11 @@ JP_GWS1_IRON_INGOT:
       amount: 1
     6:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     7:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     8:
       material_type: slimefun
@@ -1697,7 +1758,7 @@ JP_GWS1_IRON_INGOT:
       amount: 1
     9:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
   status: 53
   tickRate: 16
@@ -1726,7 +1787,7 @@ JP_GWS1_BASALT:
   recipe:
     1:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     2:
       material_type: mc
@@ -1734,11 +1795,11 @@ JP_GWS1_BASALT:
       amount: 1
     3:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     4:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     5:
       material_type: slimefun
@@ -1746,11 +1807,11 @@ JP_GWS1_BASALT:
       amount: 1
     6:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     7:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     8:
       material_type: slimefun
@@ -1758,7 +1819,7 @@ JP_GWS1_BASALT:
       amount: 1
     9:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
   status: 53
   tickRate: 16
@@ -1787,7 +1848,7 @@ JP_GWS1_GHAST_TEAR:
   recipe:
     1:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     2:
       material_type: mc
@@ -1795,11 +1856,11 @@ JP_GWS1_GHAST_TEAR:
       amount: 1
     3:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     4:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     5:
       material_type: slimefun
@@ -1807,11 +1868,11 @@ JP_GWS1_GHAST_TEAR:
       amount: 1
     6:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     7:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     8:
       material_type: slimefun
@@ -1819,7 +1880,7 @@ JP_GWS1_GHAST_TEAR:
       amount: 1
     9:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
   status: 53
   tickRate: 16
@@ -1848,7 +1909,7 @@ JP_GWS1_COAL:
   recipe:
     1:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     2:
       material_type: mc
@@ -1856,11 +1917,11 @@ JP_GWS1_COAL:
       amount: 1
     3:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     4:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     5:
       material_type: slimefun
@@ -1868,11 +1929,11 @@ JP_GWS1_COAL:
       amount: 1
     6:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     7:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     8:
       material_type: slimefun
@@ -1880,7 +1941,7 @@ JP_GWS1_COAL:
       amount: 1
     9:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
   status: 53
   tickRate: 16
@@ -1909,7 +1970,7 @@ JP_GWS1_LAPIS_LAZULI:
   recipe:
     1:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     2:
       material_type: mc
@@ -1917,11 +1978,11 @@ JP_GWS1_LAPIS_LAZULI:
       amount: 1
     3:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     4:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     5:
       material_type: slimefun
@@ -1929,11 +1990,11 @@ JP_GWS1_LAPIS_LAZULI:
       amount: 1
     6:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     7:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     8:
       material_type: slimefun
@@ -1941,7 +2002,7 @@ JP_GWS1_LAPIS_LAZULI:
       amount: 1
     9:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
   status: 53
   tickRate: 16
@@ -1970,7 +2031,7 @@ JP_GWS1_GLASS:
   recipe:
     1:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     2:
       material_type: mc
@@ -1978,11 +2039,11 @@ JP_GWS1_GLASS:
       amount: 1
     3:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     4:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     5:
       material_type: slimefun
@@ -1990,11 +2051,11 @@ JP_GWS1_GLASS:
       amount: 1
     6:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     7:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     8:
       material_type: slimefun
@@ -2002,7 +2063,7 @@ JP_GWS1_GLASS:
       amount: 1
     9:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
   status: 53
   tickRate: 16
@@ -2031,7 +2092,7 @@ JP_GWS1_SOUL_SAND:
   recipe:
     1:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     2:
       material_type: mc
@@ -2039,11 +2100,11 @@ JP_GWS1_SOUL_SAND:
       amount: 1
     3:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     4:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     5:
       material_type: slimefun
@@ -2051,11 +2112,11 @@ JP_GWS1_SOUL_SAND:
       amount: 1
     6:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     7:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     8:
       material_type: slimefun
@@ -2063,7 +2124,7 @@ JP_GWS1_SOUL_SAND:
       amount: 1
     9:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
   status: 53
   tickRate: 16
@@ -2092,7 +2153,7 @@ JP_GWS1_NETHERRACK:
   recipe:
     1:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     2:
       material_type: mc
@@ -2100,11 +2161,11 @@ JP_GWS1_NETHERRACK:
       amount: 1
     3:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     4:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     5:
       material_type: slimefun
@@ -2112,11 +2173,11 @@ JP_GWS1_NETHERRACK:
       amount: 1
     6:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     7:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     8:
       material_type: slimefun
@@ -2124,7 +2185,7 @@ JP_GWS1_NETHERRACK:
       amount: 1
     9:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
   status: 53
   tickRate: 16
@@ -2153,7 +2214,7 @@ JP_GWS1_QUARTZ:
   recipe:
     1:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     2:
       material_type: mc
@@ -2161,11 +2222,11 @@ JP_GWS1_QUARTZ:
       amount: 1
     3:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     4:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     5:
       material_type: slimefun
@@ -2173,11 +2234,11 @@ JP_GWS1_QUARTZ:
       amount: 1
     6:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     7:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     8:
       material_type: slimefun
@@ -2185,7 +2246,7 @@ JP_GWS1_QUARTZ:
       amount: 1
     9:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
   status: 53
   tickRate: 16
@@ -2215,7 +2276,7 @@ JP_GWS1_BLAZE_ROD:
   recipe:
     1:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     2:
       material_type: mc
@@ -2223,11 +2284,11 @@ JP_GWS1_BLAZE_ROD:
       amount: 1
     3:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     4:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     5:
       material_type: slimefun
@@ -2235,11 +2296,11 @@ JP_GWS1_BLAZE_ROD:
       amount: 1
     6:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     7:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     8:
       material_type: slimefun
@@ -2247,7 +2308,7 @@ JP_GWS1_BLAZE_ROD:
       amount: 1
     9:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
   status: 53
   tickRate: 16
@@ -2276,7 +2337,7 @@ JP_GWS1_GOLD_INGOT:
   recipe:
     1:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     2:
       material_type: mc
@@ -2284,11 +2345,11 @@ JP_GWS1_GOLD_INGOT:
       amount: 1
     3:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     4:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     5:
       material_type: slimefun
@@ -2296,11 +2357,11 @@ JP_GWS1_GOLD_INGOT:
       amount: 1
     6:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     7:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     8:
       material_type: slimefun
@@ -2308,7 +2369,7 @@ JP_GWS1_GOLD_INGOT:
       amount: 1
     9:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
   status: 53
   tickRate: 16
@@ -2337,7 +2398,7 @@ JP_GWS1_SOUL_SOIL:
   recipe:
     1:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     2:
       material_type: mc
@@ -2345,11 +2406,11 @@ JP_GWS1_SOUL_SOIL:
       amount: 1
     3:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     4:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     5:
       material_type: slimefun
@@ -2357,11 +2418,11 @@ JP_GWS1_SOUL_SOIL:
       amount: 1
     6:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     7:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     8:
       material_type: slimefun
@@ -2369,7 +2430,7 @@ JP_GWS1_SOUL_SOIL:
       amount: 1
     9:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
   status: 53
   tickRate: 16
@@ -2398,7 +2459,7 @@ JP_GWS1_BLACKSTONE:
   recipe:
     1:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     2:
       material_type: mc
@@ -2406,11 +2467,11 @@ JP_GWS1_BLACKSTONE:
       amount: 1
     3:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     4:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     5:
       material_type: slimefun
@@ -2418,11 +2479,11 @@ JP_GWS1_BLACKSTONE:
       amount: 1
     6:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     7:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     8:
       material_type: slimefun
@@ -2430,7 +2491,7 @@ JP_GWS1_BLACKSTONE:
       amount: 1
     9:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
   status: 53
   tickRate: 16
@@ -2459,7 +2520,7 @@ JP_GWS1_DIAMOND:
   recipe:
     1:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     2:
       material_type: mc
@@ -2467,11 +2528,11 @@ JP_GWS1_DIAMOND:
       amount: 1
     3:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     4:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     5:
       material_type: slimefun
@@ -2479,11 +2540,11 @@ JP_GWS1_DIAMOND:
       amount: 1
     6:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     7:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     8:
       material_type: slimefun
@@ -2491,7 +2552,7 @@ JP_GWS1_DIAMOND:
       amount: 1
     9:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
   status: 53
   tickRate: 16
@@ -2520,7 +2581,7 @@ JP_GWS1_NETHERITE_INGOT:
   recipe:
     1:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     2:
       material_type: mc
@@ -2528,11 +2589,11 @@ JP_GWS1_NETHERITE_INGOT:
       amount: 1
     3:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     4:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     5:
       material_type: slimefun
@@ -2540,11 +2601,11 @@ JP_GWS1_NETHERITE_INGOT:
       amount: 1
     6:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     7:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     8:
       material_type: slimefun
@@ -2552,7 +2613,7 @@ JP_GWS1_NETHERITE_INGOT:
       amount: 1
     9:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
   status: 53
   tickRate: 16
@@ -2581,7 +2642,7 @@ JP_GWS1_EXPERIENCE_BOTTLE:
   recipe:
     1:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     2:
       material_type: mc
@@ -2589,11 +2650,11 @@ JP_GWS1_EXPERIENCE_BOTTLE:
       amount: 1
     3:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     4:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     5:
       material_type: slimefun
@@ -2601,11 +2662,11 @@ JP_GWS1_EXPERIENCE_BOTTLE:
       amount: 1
     6:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     7:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
     8:
       material_type: slimefun
@@ -2613,7 +2674,7 @@ JP_GWS1_EXPERIENCE_BOTTLE:
       amount: 1
     9:
       material_type: slimefun
-      material: GCE_EXCITATION_CHAMBER_10
+      material: GCE_EXCITATION_CHAMBER_3
       amount: 1
   status: 53
   tickRate: 16
@@ -2711,7 +2772,7 @@ JP_YXYTJ1:
   tickRate: 10
   outputItem:
     material_type: slimefun
-    material: _FINALTECH_ORDERED_DUST
+    material: FINALTECH_ORDERED_DUST
     amount: 64
   output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52]
 
@@ -2739,7 +2800,7 @@ JP_WXYTJ1:
   tickRate: 10
   outputItem:
     material_type: slimefun
-    material: _FINALTECH_UNORDERED_DUST
+    material: FINALTECH_UNORDERED_DUST
     amount: 64
   output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52]
 
@@ -3948,6 +4009,203 @@ JP_FC_FW:
        material: JP_BEE
        amount: 1   
   output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52]
+
+
+JP_鼓舞室_掉落物版:
+  lateInit: true
+  item_group: jp_jq
+  item:
+    name: '§l§a鼓舞室Plus_§l&#ea1a1a掉落物鸡'
+    lore:
+    - '&4拥有无限可能的鼓舞室'
+    - '&8⇨ &e⚡&7 200000 J 可存储'
+    - '&8⇨ &e⚡&7 61920 J/s'
+    material_type: skull_hash
+    material: 3241b83d9b59b9b43660d0ccd19388cd73c690ba443af34e9dd7e32150f8913
+    amount: 1
+  capacity: 200000
+  per: 30960
+  recipe_type: NULL
+  recipe: 
+    2:
+      material_type: slimefun
+      material: RPG_ZOMBIE_4
+      amount: 1
+    5:
+      material_type: slimefun
+      material: JP_击杀
+      amount: 1  
+  status: 53
+  tickRate: 5
+  outputs:
+     1:
+       material_type: mc
+       material: BONE
+       amount: 1
+     2:
+       material_type: mc
+       material: STRING
+       amount: 1  
+     3:
+       material_type: mc
+       material: FEATHER
+       amount: 1
+     4:
+       material_type: mc
+       material: LEATHER
+       amount: 1   
+     5:
+       material_type: mc
+       material: RABBIT_HIDE
+       amount: 1
+     6:
+       material_type: mc
+       material: INK_SAC
+       amount: 1  
+     7:
+       material_type: mc
+       material: GLOW_INK_SAC
+       amount: 1
+     8:
+       material_type: mc
+       material: SCUTE
+       amount: 1
+     9:
+       material_type: mc
+       material: SLIME_BALL
+       amount: 1
+     10:
+       material_type: mc
+       material: BEEF
+       amount: 1  
+     11:
+       material_type: mc
+       material: PRISMARINE_SHARD
+       amount: 1
+     12:
+       material_type: mc
+       material: PRISMARINE_CRYSTALS
+       amount: 1
+     13:
+       material_type: mc
+       material: NAUTILUS_SHELL
+       amount: 1
+     14:
+       material_type: mc
+       material: BLAZE_ROD
+       amount: 1  
+     15:
+       material_type: mc
+       material: NETHER_STAR
+       amount: 1 
+     16:
+       material_type: mc
+       material: ENDER_PEARL
+       amount: 1 
+     17:
+       material_type: mc
+       material: ENDER_EYE
+       amount: 1 
+     18:
+       material_type: mc
+       material: SHULKER_SHELL
+       amount: 1  
+     19:
+       material_type: mc
+       material: ECHO_SHARD
+       amount: 1    
+     20:
+       material_type: mc
+       material: GLASS_BOTTLE
+       amount: 1 
+     21:
+       material_type: mc
+       material: GUNPOWDER
+       amount: 1  
+     22:
+       material_type: mc
+       material: RABBIT_FOOT
+       amount: 1
+     23:
+       material_type: mc
+       material: SPIDER_EYE
+       amount: 1
+     24:
+       material_type: mc
+       material: MAGMA_CREAM
+       amount: 1 
+     25:
+       material_type: mc
+       material: GHAST_TEAR
+       amount: 1
+     26:
+       material_type: mc
+       material: PHANTOM_MEMBRANE
+       amount: 1
+     27:
+       material_type: mc
+       material: WITHER_SKELETON_SKULL
+       amount: 1
+     28:
+       material_type: mc
+       material: PORKCHOP
+       amount: 1 
+     29:
+       material_type: mc
+       material: MUTTON
+       amount: 1 
+     30:
+       material_type: mc
+       material: CHICKEN
+       amount: 1
+     31:
+       material_type: mc
+       material: RABBIT
+       amount: 1
+     32:
+       material_type: mc
+       material: COD
+       amount: 1                           
+  output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52]
+
+###杂项
+
+
+JP_钨钢开采机:
+  lateInit: true
+  item_group: jp_jq_plus
+  item:
+    name: '§l§a钨钢§l§b开采机'
+    lore:
+    - '&4全自动开采钨钢'
+    - '上古时代机器,击杀僵王概率掉落'
+    - '&8⇨ &e⚡&7 100000 J 可存储'
+    - '&8⇨ &e⚡&7 30000 J/s'
+    material_type: skull_hash
+    material: 2668aa517ff9ad951fee4a99a0af1cd6117963ae9098977118da21cf21f51277
+    amount: 1
+  capacity: 100000
+  per: 15000
+  recipe_type: NULL
+  recipe: 
+    2:
+      material_type: slimefun
+      material: RPG_ZOMBIE_4
+      amount: 1
+    5:
+      material_type: slimefun
+      material: JP_击杀
+      amount: 1 
+  status: 53
+  tickRate: 5
+  outputs:
+     1:
+       material_type: slimefun
+       material: JP_WG
+       amount: 1
+  output: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52]
+
+
 
 
 

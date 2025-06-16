@@ -24,7 +24,7 @@ JP_SWSYS:
       material: DIAMOND_BLOCK   
   work: 5
   sound: ANCIENT_ALTAR_FINISH_SOUND
-  script: SWSYS
+  script: 工作台脚本/SWSYS
   recipes:
     RPG_ZOMBIE_1:
       input:
@@ -281,16 +281,7 @@ JP_KJJQ:
          material_type: slimefun
          material: JP_FENKA 
          amount: 64    
-    JP_DLKLJ:
-      input:
-        1: 
-          material_type: slimefun
-          material: SWORD_OF_BEHEADING
-          amount: 1
-      output:
-         material_type: slimefun
-         material: JP_DLKLJ 
-         amount: 1   
+
     JP_FWQ:
       input:
        1:
@@ -333,87 +324,7 @@ JP_KJJQ:
          material_type: slimefun
          material: JP_FWQ 
          amount: 1  
-    JP_PLAYPLAN:
-      input:
-       1:
-          material_type: slimefun
-          material: RUBBER
-          amount: 1   
-       2:
-          material_type: slimefun
-          material: RUBBER 
-          amount: 1 
-       3:
-          material_type: slimefun
-          material: RUBBER
-          amount: 1   
-       4:
-          material_type: slimefun
-          material: RUBBER 
-          amount: 1 
-       6:
-          material_type: slimefun
-          material: RUBBER 
-          amount: 1         
-       7:
-          material_type: slimefun
-          material: RUBBER
-          amount: 1  
-       8:
-          material_type: slimefun
-          material: RUBBER 
-          amount: 1         
-       9:
-          material_type: slimefun
-          material: RUBBER 
-          amount: 1   
-      output:
-         material_type: slimefun
-         material: JP_PLAYPLAN 
-         amount: 1
-    JP_村民棒:
-      input:
-       1:
-          material_type: mc
-          material: EMERALD_BLOCK
-          amount: 1   
-       2:
-          material_type: mc
-          material: EMERALD_BLOCK 
-          amount: 1 
-       3:
-          material_type: mc
-          material: EMERALD_BLOCK
-          amount: 1   
-       4:
-          material_type: mc
-          material: EMERALD_BLOCK 
-          amount: 1
-       5:
-          material_type: mc
-          material: DIAMOND_BLOCK 
-          amount: 1    
-       6:
-          material_type: mc
-          material: EMERALD_BLOCK 
-          amount: 1         
-       7:
-          material_type: mc
-          material: EMERALD_BLOCK
-          amount: 1  
-       8:
-          material_type: mc
-          material: EMERALD_BLOCK 
-          amount: 1         
-       9:
-          material_type: mc
-          material: EMERALD_BLOCK 
-          amount: 1   
-      output:
-         material_type: slimefun
-         material: JP_村民棒 
-         amount: 1           
-
+               
 ##神话工作台   
 
 JP_GOD_CRAFTING_TABLE:
@@ -442,7 +353,7 @@ JP_GOD_CRAFTING_TABLE:
       material: GOLD_BLOCK   
   work: 5
   sound: ANCIENT_ALTAR_FINISH_SOUND
-  script: 神话工作台
+  script: 工作台脚本/神话工作台
   recipes:
     JP_LANQIU:
       input:
@@ -685,3 +596,203 @@ JP_GOD_CRAFTING_TABLE:
          material_type: slimefun
          material: JP_ZBYG 
          amount: 1                 
+
+
+JP_工具组装台:
+  item_group: jp_crafting
+  item:
+    name: "&#c5a41d&l工&#9caf50&l具&#73ba82&l组&#4ac4b5&l装&#21cfe7&l台"
+    material: SMITHING_TABLE
+  recipe:
+    1:
+      material: HEAVY_WEIGHTED_PRESSURE_PLATE
+    2:
+      material: HEAVY_WEIGHTED_PRESSURE_PLATE
+    3:
+      material: HEAVY_WEIGHTED_PRESSURE_PLATE  
+    4:
+      material: DECORATED_POT    
+    5:
+      material: SMITHING_TABLE
+    6:
+      material: DECORATED_POT
+    7:
+      material: CRAFTING_TABLE     
+    8:
+      material: DISPENSER
+    9:
+      material: CRAFTING_TABLE   
+  work: 5
+  sound: ANCIENT_ALTAR_FINISH_SOUND
+  recipes:
+  
+    JP_DLKLJ:
+      input:
+        1: 
+          material_type: slimefun
+          material: SWORD_OF_BEHEADING
+          amount: 1
+      output:
+         material_type: slimefun
+         material: JP_DLKLJ 
+         amount: 1   
+
+    JP_PLAYPLAN:
+      input:
+       1:
+          material_type: slimefun
+          material: RUBBER
+          amount: 1   
+       2:
+          material_type: slimefun
+          material: RUBBER 
+          amount: 1 
+       3:
+          material_type: slimefun
+          material: RUBBER
+          amount: 1   
+       4:
+          material_type: slimefun
+          material: RUBBER 
+          amount: 1 
+       6:
+          material_type: slimefun
+          material: RUBBER 
+          amount: 1         
+       7:
+          material_type: slimefun
+          material: RUBBER
+          amount: 1  
+       8:
+          material_type: slimefun
+          material: RUBBER 
+          amount: 1         
+       9:
+          material_type: slimefun
+          material: RUBBER 
+          amount: 1   
+      output:
+         material_type: slimefun
+         material: JP_PLAYPLAN 
+         amount: 1
+
+    JP_村民棒:
+      input:
+       1:
+          material_type: mc
+          material: EMERALD_BLOCK
+          amount: 1   
+       2:
+          material_type: mc
+          material: EMERALD_BLOCK 
+          amount: 1 
+       3:
+          material_type: mc
+          material: EMERALD_BLOCK
+          amount: 1   
+       4:
+          material_type: mc
+          material: EMERALD_BLOCK 
+          amount: 1
+       5:
+          material_type: mc
+          material: DIAMOND_BLOCK 
+          amount: 1    
+       6:
+          material_type: mc
+          material: EMERALD_BLOCK 
+          amount: 1         
+       7:
+          material_type: mc
+          material: EMERALD_BLOCK
+          amount: 1  
+       8:
+          material_type: mc
+          material: EMERALD_BLOCK 
+          amount: 1         
+       9:
+          material_type: mc
+          material: EMERALD_BLOCK 
+          amount: 1   
+      output:
+         material_type: slimefun
+         material: JP_村民棒 
+         amount: 1 
+
+    JP_手电钻:
+      input:  
+       2:
+          material_type: slimefun
+          material: GPS_GEO_SCANNER 
+          amount: 1 
+       4:
+          material_type: mc
+          material: PISTON 
+          amount: 1
+       5:
+          material_type: slimefun
+          material: OIL_PUMP 
+          amount: 1    
+       6:
+          material_type: mc
+          material: PISTON 
+          amount: 1         
+       7:
+          material_type: mc
+          material: HOPPER
+          amount: 1  
+       8:
+          material_type: mc
+          material: HOPPER 
+          amount: 1         
+       9:
+          material_type: mc
+          material: HOPPER 
+          amount: 1   
+      output:
+         material_type: slimefun
+         material: JP_手电钻 
+         amount: 1 
+
+    JP_空岛镐:
+      input: 
+       1:
+          material_type: mc
+          material: GPS_GEO_SCANNER 
+          amount: 1 
+       2:
+          material_type: mc
+          material: DIAMOND_PICKAXE 
+          amount: 1  
+       3:
+          material_type: mc
+          material: DIAMOND_PICKAXE 
+          amount: 1 
+       4:
+          material_type: mc
+          material: DIAMOND_PICKAXE 
+          amount: 1
+       5:
+          material_type: mc
+          material: DIAMOND_PICKAXE 
+          amount: 1    
+       6:
+          material_type: mc
+          material: DIAMOND_PICKAXE 
+          amount: 1         
+       7:
+          material_type: mc
+          material: DIAMOND_PICKAXE
+          amount: 1  
+       8:
+          material_type: mc
+          material: DIAMOND_PICKAXE 
+          amount: 1         
+       9:
+          material_type: mc
+          material: DIAMOND_PICKAXE 
+          amount: 1   
+      output:
+         material_type: slimefun
+         material: JP_空岛镐 
+         amount: 1                               

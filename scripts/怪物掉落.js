@@ -18,125 +18,63 @@ function handleItemInMainHand(player, slimefunItemId) {
   }
 }
 
-//自定义标签怪物掉落
-function zidingyiguaiwu(event,killer) {
-  const levels = [
-    { item: "JP_JH_1", probability: 50 },
-    { item: "JP_JH_2", probability: 50 },
-    { item: "JP_JH_3", probability: 50 },
-    { item: "JP_JH_4", probability: 50 },
-    { item: "JP_JH_5", probability: 50 },
-    { item: "JP_JH_6", probability: 50 }
-  ];
+// 自定义标签怪物掉落
+function zidingyiguaiwu(entity, killer) {
+  const levelDrops = {
+    "一级怪物": [
+      { item: "JP_JH_1", probability: 50 },
+    ],
+    "二级怪物": [
+      { item: "JP_JH_2", probability: 50 },
+    ],
+    "三级怪物": [
+      { item: "JP_JH_3", probability: 50 },
+    ],
+    "四级怪物": [
+      { item: "JP_JH_4", probability: 50 },
+      { item: "JP_钨钢开采机", probability: 10 }
+    ],
+    "五级怪物": [
+      { item: "JP_JH_5", probability: 50 },
+    ],
+    "世界boss": [
+      { item: "JP_JH_6", probability: 50 },
+    ]
+  };
 
-  const customNames = event.getScoreboardTags();
-  let levelIndex = -1;
+  const customNames = entity.getScoreboardTags();
+  let drops = null;
 
-  // 根据自定义标签确定索引
-  customNames.forEach((tag) => {
-    if (tag === "一级怪物") levelIndex = 0;
-    else if (tag === "二级怪物") levelIndex = 1;
-    else if (tag === "三级怪物") levelIndex = 2;
-    else if (tag === "四级怪物") levelIndex = 3;
-    else if (tag === "五级怪物") levelIndex = 4;
-    else if (tag === "世界boss") levelIndex = 5;
-  });
+  // 遍历标签集合，找到对应的掉落物品列表
+  for (const tag of customNames) {
+    if (levelDrops.hasOwnProperty(tag)) {
+      drops = levelDrops[tag];
+      break;
+    }
+  }
 
-  // 如果找到有效的索引
-  if (levelIndex !== -1) {
-    const level = levels[levelIndex];
-    const slimefunItem = getSfItemById(level.item);
-    const itemStack = new org.bukkit.inventory.ItemStack(slimefunItem.getItem());
-    const location = event.getLocation(); 
+  if (drops) {
+    const location = entity.getLocation();
     const world = location.getWorld();
 
-    const randomValue = Math.random() * 100; // 生成0到100的随机浮点数
-    //killer.sendMessage(randomValue);
+    // 遍历所有物品并检查掉落
+    for (let i = 0; i < drops.length; i++) {
+      const drop = drops[i];
+      const slimefunItem = getSfItemById(drop.item);
+      //const itemStack = new org.bukkit.inventory.ItemStack(slimefunItem.getItem());
+      let itemStack = slimefunItem.getItem().clone();
 
-    // 直接与单个掉落项的概率比较
-    if (randomValue <= level.probability) {
-      world.dropItemNaturally(location, itemStack);
+      const randomValue = Math.random() * 100; // 生成0到100的随机浮点数
+
+      // 如果随机值小于或等于物品的概率，则掉落该物品
+      if (randomValue <= drop.probability) {
+        world.dropItemNaturally(location, itemStack);
+      }
     }
   }
 }
 
 
-//自定义武器与怪物掉落
-function zidingyiguaiwuByzidingyiwuqi(killer, entity) {
-  const drops = [
-    { item: "REINFORCED_ALLOY_INGOT", probability: 10 },
-    { item: "SYNTHETIC_DIAMOND", probability: 10 },
-    { item: "SYNTHETIC_EMERALD", probability: 10 },
-    { item: "FERROSILICON", probability: 10 },
-    { item: "SYNTHETIC_SAPPHIRE", probability: 10 },
-    { item: "CARBONADO", probability: 10 }
-  ];
-
-  const entityTypeToDropIndex = {
-    [org.bukkit.entity.EntityType.ZOMBIE]: 0,
-    [org.bukkit.entity.EntityType.SPIDER]: 1,
-    [org.bukkit.entity.EntityType.CREEPER]: 2,
-    [org.bukkit.entity.EntityType.SKELETON]: 3,
-    [org.bukkit.entity.EntityType.MAGMA_CUBE]: 4,
-    [org.bukkit.entity.EntityType.IRON_GOLEM]: 5,
-  };
-
-  const dropIndex = entityTypeToDropIndex[entity.getType()];
-
-  if (dropIndex === undefined) return;
-
-  const drop = drops[dropIndex];
-  const slimefunItem = getSfItemById(drop.item);
-  const itemStack = new org.bukkit.inventory.ItemStack(slimefunItem.getItem());
-  const location = entity.getLocation();
-  const world = entity.getWorld();
-
-  const randomValue = Math.random() * 100;
-
-
-  if (randomValue <= drop.probability) {
-    world.dropItemNaturally(location, itemStack);
-  }
-}
-
-
-//自定义镐子掉落物品
-function pickaxeDropItems(player, e) {
-  const drops = [
-    { item: "REINFORCED_ALLOY_INGOT", probability: 10 ,},
-    { item: "SYNTHETIC_DIAMOND", probability: 10 },
-    { item: "SYNTHETIC_EMERALD", probability: 10 },
-    { item: "FERROSILICON", probability: 10 },
-    { item: "SYNTHETIC_SAPPHIRE", probability: 10 },
-    { item: "CARBONADO", probability: 10 }
-  ];
-
-  const blockTypeToDropIndex = {
-    [org.bukkit.Material.ANCIENT_DEBRIS]: 0,
-    [org.bukkit.Material.DIAMOND_ORE]: 1,
-    [org.bukkit.Material.EMERALD_ORE]: 2,
-    [org.bukkit.Material.NETHER_QUARTZ_ORE]: 3,
-    [org.bukkit.Material.LAPIS_ORE]: 4,
-    [org.bukkit.Material.OBSIDIAN]: 5,
-  };
-
-  const block = e.getBlock();
-  const blockType = block.getType();
-  const dropIndex = blockTypeToDropIndex[blockType];
-
-  if (dropIndex === undefined) return;
-
-  const drop = drops[dropIndex];
-  const slimefunItem = getSfItemById(drop.item);
-  const itemStack = new org.bukkit.inventory.ItemStack(slimefunItem.getItem());
-  const location = block.getLocation();
-  const world = block.getWorld();
-
-  const randomValue = Math.random() * 100;
-  if (randomValue <= drop.probability) {
-    world.dropItemNaturally(location, itemStack);
-  }
-}
 
 
 //追踪弓
@@ -222,25 +160,38 @@ function onEntityDeath(e) {
   let entity = e.getEntity();
   let killer = entity.getKiller();
 
-  if (killer instanceof org.bukkit.entity.Player) {
-
-    if (handleItemInMainHand(killer, "JP_HKS_DIAMOND_SWORD")) {
-      zidingyiguaiwuByzidingyiwuqi(killer, entity);
-    }
-  }
-
   if (entity instanceof org.bukkit.entity.Monster) {
     zidingyiguaiwu(entity,killer); //自定义怪物掉落
   }
-}
-
-
-function onBlockBreak(e) {
-  let player = e.getPlayer();
-
-  if (handleItemInMainHand(player, "JP_HKS_PICKAXE")) {
-    e.setDropItems(false);
-    pickaxeDropItems(player, e);//自定义镐子
+  if (entity instanceof org.bukkit.entity.Slime) {
+    if (entity.getSize() > 64) {
+      let location = entity.getLocation();
+      let world = location.getWorld();
+      let slimefunItem = getSfItemById("JP_史莱姆精华");
+      //let itemStack = new org.bukkit.inventory.ItemStack(slimefunItem.getItem());
+      let itemStack = slimefunItem.getItem().clone();
+      let randomValue = Math.random() * 100; // 生成0到100的随机浮点数
+    
+      // 如果随机值小于或等于物品的概率，则掉落该物品
+      if (randomValue <= 30) {
+        world.dropItemNaturally(location, itemStack);
+      }
+    }
+  }
+  if (entity instanceof org.bukkit.entity.MagmaCube) {
+    if (entity.getSize() > 64) {
+      let location = entity.getLocation();
+      let world = location.getWorld();
+      let slimefunItem = getSfItemById("JP_岩浆怪精华");
+      //let itemStack = new org.bukkit.inventory.ItemStack(slimefunItem.getItem());
+      let itemStack = slimefunItem.getItem().clone();
+      let randomValue = Math.random() * 100; // 生成0到100的随机浮点数
+    
+      // 如果随机值小于或等于物品的概率，则掉落该物品
+      if (randomValue <= 30) {
+        world.dropItemNaturally(location, itemStack);
+      }
+    }
   }
 }
 
@@ -300,7 +251,7 @@ function onEntityDamageByEntity(e) {
 
       //回血技能
       let Chance1 = 0.1
-      if(chanceEvent(Chance1) && entity.getMaxHealth()* 0.1 >= entity.getHealth()){
+      if(chanceEvent(Chance1) && entity.getMaxHealth()* 0.3 >= entity.getHealth()){
         for (let i = 0; i < 3; i++) {
           let monster = entityworld.spawnEntity(entitylocation, org.bukkit.entity.EntityType.ZOMBIE);
           monster.setCustomName("回血怪");
@@ -317,7 +268,7 @@ function onEntityDamageByEntity(e) {
       }
 
       //概念秒杀技
-      let Chance2 = 0.001
+      let Chance2 = 0.01
       if(chanceEvent(Chance2)){
         let playerlocation = player.getLocation();
         generateObsidianCage(player, playerworld, playerlocation, radius);
@@ -345,14 +296,14 @@ function onEntityDamageByEntity(e) {
             let randomY = playerworld.getHighestBlockYAt(randomX, randomZ);
             let lightningLocation = new org.bukkit.Location(playerworld, randomX, randomY, randomZ);
             let strikeLightning = playerworld.strikeLightning(lightningLocation);
-            strikeLightning.addScoreboardTag("闪电100");
+            strikeLightning.addScoreboardTag("闪电300");
           }
         }, 50);       
       }
 
       //回血信标
       let Chance4 = 0.05;
-      if(chanceEvent(Chance4) && entity.getMaxHealth()* 0.1 >= entity.getHealth()){
+      if(chanceEvent(Chance4) && entity.getMaxHealth()* 0.3 >= entity.getHealth()){
         EntityadditionalHealth(entitylocation, entityworld);
       }
 
@@ -412,7 +363,7 @@ function onEntityDamageByEntity(e) {
             let direction =playerlocation.toVector().subtract(lightningLocation.toVector()).normalize();
             fireball.setDirection(direction);
           }
-        }, 50); 
+        }, 10); 
       }
     }
   }
@@ -439,7 +390,7 @@ function onEntityDamageByEntity(e) {
   
   tagdamagebyentitytag(e, "大火球", 0, "三级怪物");
   tagdamagebyentitytag(e, "闪电10", 10, "三级怪物");
-  tagdamagebyentitytag(e, "闪电100", 100, "四级怪物");
+  tagdamagebyentitytag(e, "闪电300", 300, "四级怪物");
   entitytagbymultbychance(e, "四级怪物", 2, 0.2);//暴击20%概率造成伤害x2倍
   entitytagbychance(e, "四级怪物", 0.2);//闪避20%概率
   entitytagbychancebymult(e, "四级怪物", 0.2, 0.2);//吸血20%概率+伤害x0.2倍数回血
@@ -640,11 +591,3 @@ function clearBlocks(world, location, radius, fromMaterial, toMaterial){
     }
   }
 }
-
-
-
-
-
-
-
-
